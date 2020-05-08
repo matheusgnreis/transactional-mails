@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/ecomplus/transactional-mails/compare/v1.2.4...v1.3.0) (2020-05-08)
+
+
+### Features
+
+* render optional custom mensagem ([#36](https://github.com/ecomplus/transactional-mails/issues/36)) ([342e693](https://github.com/ecomplus/transactional-mails/commit/342e693befb26709c9f2672d2989fc36276d0ad6))
+
+
+### Bug Fixes
+
+* **invoice_issued:** prevents error with orders without invoice number ([#35](https://github.com/ecomplus/transactional-mails/issues/35)) ([bc97b9b](https://github.com/ecomplus/transactional-mails/commit/bc97b9b3c17dbca37e58ad765e6d06d206d0d9c0)), closes [#25](https://github.com/ecomplus/transactional-mails/issues/25)
+
 ### [1.2.4](https://github.com/ecomplus/transactional-mails/compare/v1.2.3...v1.2.4) (2020-04-17)
 
 
