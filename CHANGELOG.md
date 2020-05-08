@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.1](https://github.com/ecomplus/transactional-mails/compare/v1.3.0...v1.3.1) (2020-05-08)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#30](https://github.com/ecomplus/transactional-mails/issues/30)) ([5027f26](https://github.com/ecomplus/transactional-mails/commit/5027f26))
+* **deps:** update dependency ejs to v3 ([#34](https://github.com/ecomplus/transactional-mails/issues/34)) ([3b777d1](https://github.com/ecomplus/transactional-mails/commit/3b777d1))
+* **new-order:** skip using custom message for voided order ([5782a6e](https://github.com/ecomplus/transactional-mails/commit/5782a6e))
+
+
+
 ## [1.3.0](https://github.com/ecomplus/transactional-mails/compare/v1.2.4...v1.3.0) (2020-05-08)
 
 
