@@ -29,19 +29,23 @@ module.exports = {
    * @param {object} store - Store body object
    * @param {object} customer - Customer body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
 
-transactionalMails.welcome(store, customer, 'pt_br')
+transactionalMails.welcome(store, customer, 'pt_br', 'Hello {name}, welcome to our Shop!')
   .then(html => sendEmail(html, options))
   .catch(err => console.error(err))
 
    */
 
-  welcome (store, customer, lang, custom_message) {
-    const data = { store, customer, custom_message }
-    return render('welcome', data, store, lang)
+  welcome (store, customer, lang, customMessage) {
+    return render('welcome', {
+      store,
+      customer,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -52,6 +56,7 @@ transactionalMails.welcome(store, customer, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} cart - Cart body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -62,9 +67,13 @@ transactionalMails.abandonedCart(store, customer, cart, 'pt_br')
 
    */
 
-  abandonedCart (store, customer, cart, lang, custom_message) {
-    const data = { store, customer, cart, custom_message }
-    return render('abandoned-cart', data, store, lang)
+  abandonedCart (store, customer, cart, lang, customMessage) {
+    return render('abandoned-cart', {
+      store,
+      customer,
+      cart,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -75,6 +84,7 @@ transactionalMails.abandonedCart(store, customer, cart, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} order - Order body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -85,9 +95,13 @@ transactionalMails.pending(store, customer, order, 'pt_br')
 
    */
 
-  pending (store, customer, order, lang, custom_message) {
-    const data = { store, customer, order, custom_message }
-    return render('pending', data, store, lang)
+  pending (store, customer, order, lang, customMessage) {
+    return render('pending', {
+      store,
+      customer,
+      order,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -98,6 +112,7 @@ transactionalMails.pending(store, customer, order, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} order - Order body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -108,9 +123,13 @@ transactionalMails.delivered(store, customer, order, 'pt_br')
 
    */
 
-  delivered (store, customer, order, lang, custom_message) {
-    const data = { store, customer, order, custom_message }
-    return render('delivered', data, store, lang)
+  delivered (store, customer, order, lang, customMessage) {
+    return render('delivered', {
+      store,
+      customer,
+      order,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -121,6 +140,7 @@ transactionalMails.delivered(store, customer, order, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} order - Order body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -131,9 +151,13 @@ transactionalMails.shipped(store, customer, order, 'pt_br')
 
    */
 
-  shipped (store, customer, order, lang, custom_message) {
-    const data = { store, customer, order, custom_message }
-    return render('shipped', data, store, lang)
+  shipped (store, customer, order, lang, customMessage) {
+    return render('shipped', {
+      store,
+      customer,
+      order,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -144,6 +168,7 @@ transactionalMails.shipped(store, customer, order, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} order - Order body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -154,9 +179,13 @@ transactionalMails.unauthorized(store, customer, order, 'pt_br')
 
    */
 
-  unauthorized (store, customer, order, lang, custom_message) {
-    const data = { store, customer, order, custom_message }
-    return render('unauthorized', data, store, lang)
+  unauthorized (store, customer, order, lang, customMessage) {
+    return render('unauthorized', {
+      store,
+      customer,
+      order,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -167,6 +196,7 @@ transactionalMails.unauthorized(store, customer, order, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} order - Order body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -177,9 +207,13 @@ transactionalMails.voided(store, customer, order, 'pt_br')
 
    */
 
-  voided (store, customer, order, lang, custom_message) {
-    const data = { store, customer, order, custom_message }
-    return render('voided', data, store, lang)
+  voided (store, customer, order, lang, customMessage) {
+    return render('voided', {
+      store,
+      customer,
+      order,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -190,6 +224,7 @@ transactionalMails.voided(store, customer, order, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} order - Order body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -200,9 +235,13 @@ transactionalMails.underAnalysis(store, customer, order, 'pt_br')
 
    */
 
-  underAnalysis (store, customer, order, lang, custom_message) {
-    const data = { store, customer, order, custom_message }
-    return render('under_analysis', data, store, lang)
+  underAnalysis (store, customer, order, lang, customMessage) {
+    return render('under_analysis', {
+      store,
+      customer,
+      order,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -213,6 +252,7 @@ transactionalMails.underAnalysis(store, customer, order, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} order - Order body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -223,9 +263,13 @@ transactionalMails.partiallyPaid(store, customer, order, 'pt_br')
 
    */
 
-  partiallyPaid (store, customer, order, lang, custom_message) {
-    const data = { store, customer, order, custom_message }
-    return render('partially_paid', data, store, lang)
+  partiallyPaid (store, customer, order, lang, customMessage) {
+    return render('partially_paid', {
+      store,
+      customer,
+      order,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -236,6 +280,7 @@ transactionalMails.partiallyPaid(store, customer, order, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} order - Order body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -246,9 +291,13 @@ transactionalMails.paid(store, customer, order, 'pt_br')
 
    */
 
-  paid (store, customer, order, lang, custom_message) {
-    const data = { store, customer, order, custom_message }
-    return render('paid', data, store, lang)
+  paid (store, customer, order, lang, customMessage) {
+    return render('paid', {
+      store,
+      customer,
+      order,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -259,6 +308,7 @@ transactionalMails.paid(store, customer, order, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} order - Order body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -269,9 +319,13 @@ transactionalMails.inDispute(store, customer, order, 'pt_br')
 
    */
 
-  inDispute (store, customer, order, lang, custom_message) {
-    const data = { store, customer, order, custom_message }
-    return render('in_dispute', data, store, lang)
+  inDispute (store, customer, order, lang, customMessage) {
+    return render('in_dispute', {
+      store,
+      customer,
+      order,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -282,6 +336,7 @@ transactionalMails.inDispute(store, customer, order, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} order - Order body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -292,9 +347,13 @@ transactionalMails.partiallyRefunded(store, customer, order, 'pt_br')
 
    */
 
-  partiallyRefunded (store, customer, order, lang, custom_message) {
-    const data = { store, customer, order, custom_message }
-    return render('partially_refunded', data, store, lang)
+  partiallyRefunded (store, customer, order, lang, customMessage) {
+    return render('partially_refunded', {
+      store,
+      customer,
+      order,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -305,6 +364,7 @@ transactionalMails.partiallyRefunded(store, customer, order, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} order - Order body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -315,9 +375,13 @@ transactionalMails.refunded(store, customer, order, 'pt_br')
 
    */
 
-  refunded (store, customer, order, lang, custom_message) {
-    const data = { store, customer, order, custom_message }
-    return render('refunded', data, store, lang)
+  refunded (store, customer, order, lang, customMessage) {
+    return render('refunded', {
+      store,
+      customer,
+      order,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -328,6 +392,7 @@ transactionalMails.refunded(store, customer, order, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} order - Order body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -338,9 +403,13 @@ transactionalMails.invoiceIssued(store, customer, order, 'pt_br')
 
    */
 
-  invoiceIssued (store, customer, order, lang, custom_message) {
-    const data = { store, customer, order, custom_message}
-    return render('invoice_issued', data, store, lang)
+  invoiceIssued (store, customer, order, lang, customMessage) {
+    return render('invoice_issued', {
+      store,
+      customer,
+      order,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -351,6 +420,7 @@ transactionalMails.invoiceIssued(store, customer, order, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} order - Order body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -361,9 +431,13 @@ transactionalMails.inProduction(store, customer, order, 'pt_br')
 
    */
 
-  inProduction (store, customer, order, lang, custom_message) {
-    const data = { store, customer, order, custom_message }
-    return render('in_production', data, store, lang)
+  inProduction (store, customer, order, lang, customMessage) {
+    return render('in_production', {
+      store,
+      customer,
+      order,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -374,6 +448,7 @@ transactionalMails.inProduction(store, customer, order, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} order - Order body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -384,9 +459,13 @@ transactionalMails.inSeparation(store, customer, order, 'pt_br')
 
    */
 
-  inSeparation (store, customer, order, lang, custom_message) {
-    const data = { store, customer, order, custom_message }
-    return render('in_separation', data, store, lang)
+  inSeparation (store, customer, order, lang, customMessage) {
+    return render('in_separation', {
+      store,
+      customer,
+      order,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -397,6 +476,7 @@ transactionalMails.inSeparation(store, customer, order, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} order - Order body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -407,9 +487,13 @@ transactionalMails.readyForShipping(store, customer, order, 'pt_br')
 
    */
 
-  readyForShipping (store, customer, order, lang, custom_message) {
-    const data = { store, customer, order, custom_message }
-    return render('ready_for_shipping', data, store, lang)
+  readyForShipping (store, customer, order, lang, customMessage) {
+    return render('ready_for_shipping', {
+      store,
+      customer,
+      order,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -420,6 +504,7 @@ transactionalMails.readyForShipping(store, customer, order, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} order - Order body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -430,9 +515,13 @@ transactionalMails.partiallyShipped(store, customer, order, 'pt_br')
 
    */
 
-  partiallyShipped (store, customer, order, lang, custom_message) {
-    const data = { store, customer, order, custom_message }
-    return render('partially_shipped', data, store, lang)
+  partiallyShipped (store, customer, order, lang, customMessage) {
+    return render('partially_shipped', {
+      store,
+      customer,
+      order,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -443,6 +532,7 @@ transactionalMails.partiallyShipped(store, customer, order, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} order - Order body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -453,9 +543,13 @@ transactionalMails.partiallyDelivered(store, customer, order, 'pt_br')
 
    */
 
-  partiallyDelivered (store, customer, order, lang, custom_message) {
-    const data = { store, customer, order, custom_message }
-    return render('partially_delivered', data, store, lang)
+  partiallyDelivered (store, customer, order, lang, customMessage) {
+    return render('partially_delivered', {
+      store,
+      customer,
+      order,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -466,6 +560,7 @@ transactionalMails.partiallyDelivered(store, customer, order, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} order - Order body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -476,9 +571,13 @@ transactionalMails.returnedForExchange(store, customer, order, 'pt_br')
 
    */
 
-  returnedForExchange (store, customer, order, lang, custom_message) {
-    const data = { store, customer, order, custom_message }
-    return render('returned_for_exchange', data, store, lang)
+  returnedForExchange (store, customer, order, lang, customMessage) {
+    return render('returned_for_exchange', {
+      store,
+      customer,
+      order,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -489,6 +588,7 @@ transactionalMails.returnedForExchange(store, customer, order, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} order - Order body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -499,9 +599,13 @@ transactionalMails.receivedForExchange(store, customer, order, 'pt_br')
 
    */
 
-  receivedForExchange (store, customer, order, lang, custom_message) {
-    const data = { store, customer, order, custom_message }
-    return render('received_for_exchange', data, store, lang)
+  receivedForExchange (store, customer, order, lang, customMessage) {
+    return render('received_for_exchange', {
+      store,
+      customer,
+      order,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -512,6 +616,7 @@ transactionalMails.receivedForExchange(store, customer, order, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} order - Order body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -522,9 +627,13 @@ transactionalMails.returned(store, customer, order, 'pt_br')
 
    */
 
-  returned (store, customer, order, lang, custom_message) {
-    const data = { store, customer, order, custom_message }
-    return render('returned', data, store, lang)
+  returned (store, customer, order, lang, customMessage) {
+    return render('returned', {
+      store,
+      customer,
+      order,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -535,6 +644,7 @@ transactionalMails.returned(store, customer, order, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} order - Order body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -545,9 +655,13 @@ transactionalMails.returned(store, customer, order, 'pt_br')
 
      */
 
-  authorized (store, customer, order, lang, custom_message) {
-    const data = { store, customer, order, custom_message }
-    return render('authorized', data, store, lang)
+  authorized (store, customer, order, lang, customMessage) {
+    return render('authorized', {
+      store,
+      customer,
+      order,
+      custom_message: customMessage
+    }, store, lang)
   },
 
   /**
@@ -558,6 +672,7 @@ transactionalMails.returned(store, customer, order, 'pt_br')
    * @param {object} customer - Customer body object
    * @param {object} order - Order body object
    * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
    * @returns {Promise}
    *
    * @example
@@ -568,9 +683,13 @@ transactionalMails.returned(store, customer, order, 'pt_br')
 
      */
 
-  new_order (store, customer, order, lang, custom_message) {
-    const data = { store, customer, order, custom_message }
-    return render('new_order', data, store, lang)
+  new_order (store, customer, order, lang, customMessage) {
+    return render('new_order', {
+      store,
+      customer,
+      order,
+      custom_message: customMessage
+    }, store, lang)
   }
 }
 
