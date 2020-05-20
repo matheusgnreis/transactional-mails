@@ -62,6 +62,26 @@
 
                                     <td style="padding:0px 10px 30px 10px;line-height:22px;text-align:inherit;" height="100%" valign="top" bgcolor="">
 
+                                    <% if (shipping.tracking_codes) { %>
+
+                                      <% shipping.tracking_codes.forEach(tracking_code => { %>
+
+                                        <% if (tracking_code.link) { %>
+
+                                          <div style="text-align: center;"><font color="#333333"> <%= i18n.traking_link %> <a target="_blank" href="<%= tracking_code.link %>"> <%= i18n.link %></a>.</font></div>
+
+                                        <% } else { if (tracking_code.code) { %>
+
+                                          <div style="text-align: center;"><font color="#333333"> <%= i18n.traking_code %> <strong><%= tracking_code.code %></strong><% if (shipping.app.tracking_url) { %> neste <a target="_blank" href="<%= shipping.app.tracking_url %>"> <%= i18n.link %></a><% } %>.</font></div>
+
+                                        <% } %>
+
+                                        <% } %>
+
+                                      <% }) %>
+                                      <br>
+                                     <% } %>
+
                                         <div style="text-align: center;"><font color="#333333"> <%= i18n.shipped_text %> <%= i18n.delivering_in %> <strong>  <%= shipping.delivery_time.days %> <% if (shipping.delivery_time.working_days) { %> <%= i18n.working_days %> <% } else{ %> <%= i18n.days %> <% } %></strong> <%= i18n.on_following_address %> </font></div>
 
                                         <br>

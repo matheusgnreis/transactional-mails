@@ -86,6 +86,11 @@
                 "city": "Belo Horizonte",
                 "province_code": "MG"
             },
+            "tracking_codes": [
+                {
+                    "code": "BR12345678910"
+                }
+            ],
             "price": 58.1,
             "declared_value": 17.9,
             "declared_value_price": 0,
@@ -106,6 +111,11 @@
             },
             "flags": [
                 "correios-ws"
+            ],
+            "invoices": [
+              {
+                "number": "7412399"
+              }
             ]
         }
     ],
