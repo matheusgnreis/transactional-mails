@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/ecomplus/transactional-mails/compare/v1.3.1...v1.4.0) (2020-05-20)
+
+
+### Features
+
+* **views:** adding tracking code and link to shipped mail ([69d0e2f](https://github.com/ecomplus/transactional-mails/commit/69d0e2f))
+
+
+
 ### [1.3.1](https://github.com/ecomplus/transactional-mails/compare/v1.3.0...v1.3.1) (2020-05-08)
 
 
