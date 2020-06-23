@@ -107,5 +107,8 @@
   "banking_billet_print": "Print billet",
   "traking_link": "Track your package through this",
   "traking_code": "Track your package using the code",
-  "link": "link"
+  "link": "link",
+  "stock_title": "A product you’ve wished is on stock",
+  "promo_title": "A product you’ve wished is for sale",
+  "product_cta": "Visualize product"
 }

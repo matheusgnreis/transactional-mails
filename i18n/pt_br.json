@@ -109,5 +109,8 @@
   "banking_billet_print": "Imprimir boleto",
   "traking_link": "Você pode rastrear sua entrega através deste",
   "traking_code": "Você pode rastrear sua entraga através do código",
-  "link": "link"
+  "link": "link",
+  "stock_title": "O produto que deseja está em estoque",
+  "promo_title": "O produto que deseja está em promoção",
+  "product_cta": "Visualizar o produto"
 }
