@@ -1,195 +1,198 @@
 {
-    "buyers": [
+  "_id": "5ed15e8114ff772fde763fab",
+  "buyers": [
+    {
+      "_id": "5bb3747e2707d825d174c094",
+      "main_email": "leomp120894@gmail.com",
+      "display_name": "Léo",
+      "name": {
+        "given_name": "Leonardo",
+        "family_name": "Paula",
+        "middle_name": "Matos de"
+      },
+      "gender": "m",
+      "photos": [
+        "https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=1554921641256385&height=50&width=50&ext=1541079421&hash=AeSXFOR5cgPrkTF2"
+      ],
+      "phones": [
         {
-            "_id": "5ce59fbf887ef430f1f6ed28",
-            "main_email": "vitorrggm@gmail.com",
-            "display_name": "Vitor",
-            "name": {
-                "given_name": "Vitor",
-                "family_name": "Gonçalves",
-                "middle_name": "Rocha"
-            },
-            "photos": [
-                "https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=1801235723222553&height=50&width=50&ext=1561144510&hash=AeRHFPWqB3UAOkBW"
-            ],
-            "phones": [
-                {
-                    "number": "31992980552"
-                },
-                {
-                    "number": "31992827723"
-                }
-            ],
-            "registry_type": "p",
-            "doc_number": "90231508050"
-        }
-    ],
-    "items": [
-        {
-            "quantity": 1,
-            "product_id": "5d09197e24607a6a42d7140d",
-            "picture": {
-                "zoom": {
-                    "url": "https://ecom-ylgltfmo.sfo2.digitaloceanspaces.com/@1560879864753-0.png",
-                    "size": "800x800",
-                    "alt": "0"
-                },
-                "small": {
-                    "url": "https://ecom-ylgltfmo.sfo2.digitaloceanspaces.com/imgs/100px/@1560879864753-0.png",
-                    "size": "100x100",
-                    "alt": "0"
-                },
-                "normal": {
-                    "url": "https://ecom-ylgltfmo.sfo2.digitaloceanspaces.com/imgs/400px/@1560879864753-0.png",
-                    "size": "400x400",
-                    "alt": "0"
-                },
-                "big": {
-                    "url": "https://ecom-ylgltfmo.sfo2.digitaloceanspaces.com/imgs/700px/@1560879864753-0.png",
-                    "size": "700x700",
-                    "alt": "0"
-                }
-            },
-            "sku": "PA358",
-            "name": "Snack Caramelizado 120gr",
-            "price": 17.9,
-            "final_price": 17.9,
-            "_id": "e15762521388271111111111"
-        }
-    ],
-    "amount": {
-        "total": 76,
-        "subtotal": 17.9,
-        "discount": 0,
-        "freight": 58.1
-    },
-    "shipping_lines": [
-        {
-            "_id": "e15762521451151111111111",
-            "app": {
-                "_id": "5de97b80cea1b26d087dbeac",
-                "label": "PAC",
-                "carrier": "Correios",
-                "carrier_doc_number": "34028316000103",
-                "service_code": "04510",
-                "service_name": "PAC"
-            },
-            "from": {
-                "zip": "45026415"
-            },
-            "to": {
-                "zip": "30642-220",
-                "name": "Vitor Rocha Gonçalves",
-                "street": "Rua Nelson Clayton Linon",
-                "number": 30,
-                "borough": "Santa Helena (Barreiro)",
-                "city": "Belo Horizonte",
-                "province_code": "MG"
-            },
-            "tracking_codes": [
-                {
-                    "code": "BR12345678910"
-                }
-            ],
-            "price": 58.1,
-            "declared_value": 17.9,
-            "declared_value_price": 0,
-            "own_hand": false,
-            "own_hand_price": 0,
-            "receipt": false,
-            "receipt_price": 0,
-            "discount": 0,
-            "total_price": 58.1,
-            "delivery_time": {
-                "days": 12,
-                "working_days": true
-            },
-            "posting_deadline": {
-                "days": 3,
-                "working_days": true,
-                "after_approval": true
-            },
-            "flags": [
-                "correios-ws"
-            ],
-            "invoices": [
-              {
-                "number": "7412399"
-              }
-            ]
-        }
-    ],
-    "shipping_method_label": "PAC",
-    "payment_method_label": "Boleto bancário",
-    "staff_signature": false,
-    "source_name": "Web",
-    "channel_type": "ecommerce",
-    "status": "open",
-    "currency_id": "BRL",
-    "currency_symbol": "R$",
-    "budget_only": false,
-    "number": 8717,
-    "transactions": [
-        {
-            "payment_link": "https://www.paghiper.com/checkout/boleto/62506fc89b445b4499a4ac2fdb11b7699d6505d0ffb0fc1091fd3cb898bd6546b3ae91ffc146e8afa789dccbead66c41a91bcdf8556d84a99d2c70b50d1dd97e/M9I1VVCMMSIG02DP/92261940",
-            "intermediator": {
-                "transaction_id": "M9I1VVCMMSIG02DP",
-                "transaction_code": "M9I1VVCMMSIG02DP",
-                "transaction_reference": "8717"
-            },
-            "banking_billet": {
-                "code": "03399.87836 48900.000927 26194.001017 1 81070000007600",
-                "link": "https://www.paghiper.com/checkout/boleto/62506fc89b445b4499a4ac2fdb11b7699d6505d0ffb0fc1091fd3cb898bd6546b3ae91ffc146e8afa789dccbead66c41a91bcdf8556d84a99d2c70b50d1dd97e/M9I1VVCMMSIG02DP/92261940/pdf",
-                "valid_thru": "2019-12-18T00:00:00.000Z"
-            },
-            "amount": 76,
-            "type": "payment",
-            "payment_method": {
-                "code": "card",
-                "name": "Boleto bancário - PagHiper"
-            },
-            "app": {
-                "_id": "5d2f3b8a59dafd658b6688c5",
-                "label": "Boleto bancário",
-                "intermediator": {
-                    "name": "PagHiper",
-                    "link": "https://www.paghiper.com/",
-                    "code": "paghiper"
-                }
-            },
-            "status": {
-                "current": "pending"
-            },
-            "_id": "5df3b2f25cdf932a9836be74"
-        }
-    ],
-    "payments_history": [
-        {
-            "status": "pending",
-            "date_time": "2019-12-13T15:49:06.828Z",
-            "flags": [
-                "checkout"
-            ],
-            "customer_notified": false,
-            "_id": "5df3b2f25cdf932a9836be76"
+          "number": "31995623633"
         },
         {
-            "transaction_id": "5df3b2f25cdf932a9836be74",
-            "date_time": "2019-12-13T15:49:17.898Z",
-            "status": "pending",
-            "customer_notified": false,
-            "_id": "5df3b3005cdf932a9836be81"
-        },
-        {
-            "date_time": "2019-12-13T15:49:44.068Z",
-            "status": "pending",
-            "notification_code": "V6K2J3289L4TY0F8IG3ETP0L7HLAUB2QIMS2PVAYGFRFF7NYORCHGD3OUPYP10FJ",
-            "customer_notified": false,
-            "_id": "5df3b3185cdf932a9836be87"
+          "number": "3137746558"
         }
-    ],
-    "financial_status": {
-        "updated_at": "2019-12-13T15:50:47.561Z",
-        "current": "paid"
+      ],
+      "registry_type": "p",
+      "doc_number": "11035569671"
     }
+  ],
+  "items": [
+    {
+      "product_id": "5c703700c626be23430d501e",
+      "picture": {
+        "zoom": {
+          "url": "https://ecom-ptqgjveg.nyc3.digitaloceanspaces.com/@1550856815592-tela-notebook-lenovo-ideapad-330.jpg",
+          "size": "410x410",
+          "alt": "tela-notebook-lenovo-ideapad-330"
+        },
+        "small": {
+          "url": "https://ecom-ptqgjveg.nyc3.digitaloceanspaces.com/imgs/100px/@1550856815592-tela-notebook-lenovo-ideapad-330.jpg",
+          "size": "100x100",
+          "alt": "tela-notebook-lenovo-ideapad-330"
+        },
+        "normal": {
+          "url": "https://ecom-ptqgjveg.nyc3.digitaloceanspaces.com/imgs/400px/@1550856815592-tela-notebook-lenovo-ideapad-330.jpg",
+          "size": "400x400",
+          "alt": "tela-notebook-lenovo-ideapad-330"
+        },
+        "big": {
+          "url": "https://ecom-ptqgjveg.nyc3.digitaloceanspaces.com/imgs/700px/@1550856815592-tela-notebook-lenovo-ideapad-330.jpg",
+          "size": "700x700",
+          "alt": "tela-notebook-lenovo-ideapad-330"
+        }
+      },
+      "quantity": 2,
+      "sku": "nb-lnv-9197",
+      "name": "Notebook Lenovo IdeaPad 330 15.6\" Celeron N4000 RAM 4GB HD 500GB",
+      "price": 2395.1,
+      "final_price": 2395.1,
+      "_id": "e15907795205841111111111"
+    }
+  ],
+  "amount": {
+    "subtotal": 4790.2,
+    "discount": 1556.82,
+    "freight": 0,
+    "total": 3233.38
+  },
+  "shipping_lines": [
+    {
+      "_id": "e15907795212251111111111",
+      "app": {
+        "_id": "5e8fe39eba89aa0572126353",
+        "label": "PAC",
+        "carrier": "Correios",
+        "carrier_doc_number": "34028316000103",
+        "service_code": "04510",
+        "service_name": "PAC"
+      },
+      "from": {
+        "zip": "30310020"
+      },
+      "to": {
+        "zip": "30310020",
+        "province_code": "MG",
+        "number": 249,
+        "city": "Belo Horizonte",
+        "borough": "Carmo",
+        "street": "Rua Outono",
+        "complement": "Apto. 301",
+        "name": "Leonardo Matos"
+      },
+      "price": 21,
+      "declared_value": 2395.1,
+      "declared_value_price": 47.49,
+      "own_hand": false,
+      "own_hand_price": 0,
+      "receipt": false,
+      "receipt_price": 0,
+      "discount": 68.49,
+      "total_price": 0,
+      "delivery_time": {
+        "days": 8,
+        "working_days": true
+      },
+      "posting_deadline": {
+        "days": 2,
+        "working_days": true,
+        "after_approval": true
+      },
+      "flags": [
+        "correios-ws"
+      ],
+      "custom_fields": [
+        {
+          "field": "correios_ws_params",
+          "value": "sCepOrigem=30310020&sCepDestino=30310020&nCdEmpresa=c&sDsSenha=s&nCdServico=04510&sCdMaoPropria=n&sCdAvisoRecebimento=n&nVlPeso=1&nVlValorDeclarado=2395.1&nVlComprimento=16&nVlAltura=2&nVlLargura=11"
+        }
+      ]
+    }
+  ],
+  "shipping_method_label": "PAC",
+  "payment_method_label": "Pagamento na entrega",
+  "extra_discount": {
+    "discount_coupon": "",
+    "value": 838.285,
+    "flags": [
+      "OPEN"
+    ],
+    "app": {
+      "label": "10000R$ 50%",
+      "_id": "5ecea9b3126b0d057215daf7"
+    }
+  },
+  "staff_signature": false,
+  "source_name": "Web",
+  "channel_type": "ecommerce",
+  "status": "open",
+  "currency_id": "BRL",
+  "currency_symbol": "R$",
+  "budget_only": false,
+  "number": 7004,
+  "transactions": [
+    {
+      "intermediator": {
+        "payment_method": {
+          "code": "other"
+        }
+      },
+      "currency_id": "BRL",
+      "currency_symbol": "R$",
+      "discount": 1556.82,
+      "amount": 838.28,
+      "status": {
+        "updated_at": "2020-05-29T19:12:02.236Z",
+        "current": "pending"
+      },
+      "flags": [
+        "app-custom-payments"
+      ],
+      "type": "payment",
+      "payment_method": {
+        "code": "other"
+      },
+      "app": {
+        "_id": "5ecf555c126b0d057215fe10",
+        "label": "Pagamento na entrega"
+      },
+      "_id": "5ed15e8214ff772fde763fad"
+    }
+  ],
+  "payments_history": [
+    {
+      "transaction_id": "5ed15e8214ff772fde763fad",
+      "date_time": "2020-05-29T19:12:02.236Z",
+      "status": "pending",
+      "flags": [
+        "cpm:patch",
+        "cpm"
+      ],
+      "customer_notified": false,
+      "_id": "5ed15e9214ff772fde763fbf"
+    },
+    {
+      "status": "pending",
+      "date_time": "2020-05-29T19:12:02.236Z",
+      "flags": [
+        "cpm-skip",
+        "checkout"
+      ],
+      "customer_notified": false,
+      "_id": "5ed15e8214ff772fde763faf"
+    }
+  ],
+  "financial_status": {
+    "updated_at": "2020-05-29T19:12:02.236Z",
+    "current": "pending"
+  }
 }

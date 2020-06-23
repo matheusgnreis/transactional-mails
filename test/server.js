@@ -15,6 +15,7 @@ const {
   paid,
   inDispute,
   partiallyRefunded,
+  promo,
   refunded,
   invoiceIssued,
   inProduction,
@@ -25,6 +26,7 @@ const {
   returnedForExchange,
   receivedForExchange,
   returned,
+  stock,
   new_order
 } = require('./../src/')
 
@@ -33,6 +35,7 @@ const store = require('./data/store.json')
 const customer = require('./data/customer.json')
 const cart = require('./data/cart.json')
 const order = require('./data/order.json')
+const product = require('./data/product.json')
 
 // setup dev server with BrowserSync
 const browserSync = require('browser-sync').create()
@@ -68,6 +71,22 @@ browserSync.init({
       route: '/pending',
       handle (req, res, next) {
         pending(store, customer, order, 'pt_br', 'Pedido Pendente')
+          .then(html => res.end(html))
+          .catch(err => console.error(err))
+      }
+    },
+    {
+      route: '/promo',
+      handle (req, res, next) {
+        promo(store, customer, product, 'pt_br', 'Aviso de promoção')
+          .then(html => res.end(html))
+          .catch(err => console.error(err))
+      }
+    },
+    {
+      route: '/stock',
+      handle (req, res, next) {
+        stock(store, customer, product, 'pt_br', 'Aviso de estoque')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
