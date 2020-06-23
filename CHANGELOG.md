@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/ecomplus/transactional-mails/compare/v1.4.2...v1.5.0) (2020-06-23)
+
+
+### Features
+
+* **i18n:** adding new terms to vocabulary ([a3eb43a](https://github.com/ecomplus/transactional-mails/commit/a3eb43a))
+* **product:** adding product body to tests ([58e6ee6](https://github.com/ecomplus/transactional-mails/commit/58e6ee6))
+* **test:** adding products to test enviroment ([f0d7bc4](https://github.com/ecomplus/transactional-mails/commit/f0d7bc4))
+* **views:** creating on promo and on stock mails ([174b55e](https://github.com/ecomplus/transactional-mails/commit/174b55e))
+
+
+
 ### [1.4.2](https://github.com/ecomplus/transactional-mails/compare/v1.4.1...v1.4.2) (2020-06-01)
 
 
