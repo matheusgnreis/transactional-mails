@@ -690,7 +690,64 @@ transactionalMails.returned(store, customer, order, 'pt_br')
       order,
       custom_message: customMessage
     }, store, lang)
+  },
+
+  /**
+   * @method
+   * @memberof promo
+   * @description Returns HTML markup for item in promotion email.
+   * @param {object} store - Store body object
+   * @param {object} customer - Customer body object
+   * @param {object} product - product body object
+   * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
+   * @returns {Promise}
+   *
+   * @example
+
+  transactionalMails.promo(store, customer, order, 'pt_br')
+    .then(html => sendEmail(html, options))
+    .catch(err => console.error(err))
+
+     */
+
+  promo (store, customer, product, lang, customMessage) {
+    return render('promo', {
+      store,
+      customer,
+      product,
+      custom_message: customMessage
+    }, store, lang)
+  },
+
+  /**
+   * @method
+   * @memberof stock
+   * @description Returns HTML markup for item in stock email.
+   * @param {object} store - Store body object
+   * @param {object} customer - Customer body object
+   * @param {object} order - Order body object
+   * @param {string} [lang='en_us'] - Snake case language code, eg.: 'en_us', 'pt_br'
+   * @param {string} [customMessage] - Custom text for the main template phrase
+   * @returns {Promise}
+   *
+   * @example
+
+  transactionalMails.stock(store, customer, order, 'pt_br')
+    .then(html => sendEmail(html, options))
+    .catch(err => console.error(err))
+
+     */
+
+  stock (store, customer, product, lang, customMessage) {
+    return render('stock', {
+      store,
+      customer,
+      product,
+      custom_message: customMessage
+    }, store, lang)
   }
+
 }
 
 /**
