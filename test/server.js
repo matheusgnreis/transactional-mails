@@ -46,7 +46,7 @@ browserSync.init({
     {
       route: '/new_order',
       handle (req, res, next) {
-        new_order(store, customer, order, 'pt_br', 'Oi {name}, Obrigado por comprar conosco cara')
+        new_order(store, customer, order, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -54,7 +54,7 @@ browserSync.init({
     {
       route: '/welcome',
       handle (req, res, next) {
-        welcome(store, customer, 'pt_br', 'E aí {name}, bem vindo cara')
+        welcome(store, customer, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -62,7 +62,7 @@ browserSync.init({
     {
       route: '/abandoned-cart',
       handle (req, res, next) {
-        abandonedCart(store, customer, cart, 'pt_br', 'Olá {name}, seu carrinho está em aberto ainda')
+        abandonedCart(store, customer, cart, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -70,7 +70,7 @@ browserSync.init({
     {
       route: '/pending',
       handle (req, res, next) {
-        pending(store, customer, order, 'pt_br', 'Pedido Pendente')
+        pending(store, customer, order, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -94,7 +94,7 @@ browserSync.init({
     {
       route: '/delivered',
       handle (req, res, next) {
-        delivered(store, customer, order, 'pt_br', '{name}, pedido saiu pra entrega')
+        delivered(store, customer, order, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -102,7 +102,7 @@ browserSync.init({
     {
       route: '/authorized',
       handle (req, res, next) {
-        authorized(store, customer, order, 'pt_br', 'Oba {name} seu pedido foi autorizado')
+        authorized(store, customer, order, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -110,7 +110,7 @@ browserSync.init({
     {
       route: '/shipped',
       handle (req, res, next) {
-        shipped(store, customer, order, 'pt_br', '{name}, seu pedido foi enviadoooo!')
+        shipped(store, customer, order, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -118,7 +118,7 @@ browserSync.init({
     {
       route: '/unauthorized',
       handle (req, res, next) {
-        unauthorized(store, customer, order, 'pt_br', 'Vixi {name}, seu pedido não foi authorized')
+        unauthorized(store, customer, order, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -126,7 +126,7 @@ browserSync.init({
     {
       route: '/voided',
       handle (req, res, next) {
-        voided(store, customer, order, 'pt_br', 'Vixi devolvido')
+        voided(store, customer, order, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -134,7 +134,7 @@ browserSync.init({
     {
       route: '/under_analysis',
       handle (req, res, next) {
-        underAnalysis(store, customer, order, 'pt_br', 'Estamos analisando')
+        underAnalysis(store, customer, order, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -142,7 +142,7 @@ browserSync.init({
     {
       route: '/partially_paid',
       handle (req, res, next) {
-        partiallyPaid(store, customer, order, 'pt_br', 'parcialmente pago')
+        partiallyPaid(store, customer, order, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -150,7 +150,7 @@ browserSync.init({
     {
       route: '/paid',
       handle (req, res, next) {
-        paid(store, customer, order, 'pt_br', 'UHUUU FOI PAGO')
+        paid(store, customer, order, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -158,7 +158,7 @@ browserSync.init({
     {
       route: '/in_dispute',
       handle (req, res, next) {
-        inDispute(store, customer, order, 'pt_br', 'em disputa')
+        inDispute(store, customer, order, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -166,7 +166,7 @@ browserSync.init({
     {
       route: '/partially_refunded',
       handle (req, res, next) {
-        partiallyRefunded(store, customer, order, 'pt_br', 'parcialmente refunded')
+        partiallyRefunded(store, customer, order, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -174,7 +174,7 @@ browserSync.init({
     {
       route: '/refunded',
       handle (req, res, next) {
-        refunded(store, customer, order, 'pt_br', 'refundeeed')
+        refunded(store, customer, order, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -182,7 +182,7 @@ browserSync.init({
     {
       route: '/invoice_issued',
       handle (req, res, next) {
-        invoiceIssued(store, customer, order, 'pt_br', 'nf emitida')
+        invoiceIssued(store, customer, order, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -190,7 +190,7 @@ browserSync.init({
     {
       route: '/in_production',
       handle (req, res, next) {
-        inProduction(store, customer, order, 'pt_br', 'em produção')
+        inProduction(store, customer, order, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -198,7 +198,7 @@ browserSync.init({
     {
       route: '/in_separation',
       handle (req, res, next) {
-        inSeparation(store, customer, order, 'pt_br', 'em separação!!')
+        inSeparation(store, customer, order, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -206,7 +206,7 @@ browserSync.init({
     {
       route: '/ready_for_shipping',
       handle (req, res, next) {
-        readyForShipping(store, customer, order, 'pt_br', 'pronto para envio')
+        readyForShipping(store, customer, order, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -214,7 +214,7 @@ browserSync.init({
     {
       route: '/partially_shipped',
       handle (req, res, next) {
-        partiallyShipped(store, customer, order, 'pt_br', 'paricalmente enviado')
+        partiallyShipped(store, customer, order, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -222,7 +222,7 @@ browserSync.init({
     {
       route: '/partially_delivered',
       handle (req, res, next) {
-        partiallyDelivered(store, customer, order, 'pt_br', 'parcialmente entregue')
+        partiallyDelivered(store, customer, order, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -230,7 +230,7 @@ browserSync.init({
     {
       route: '/returned_for_exchange',
       handle (req, res, next) {
-        returnedForExchange(store, customer, order, 'pt_br', 'retornado para troca')
+        returnedForExchange(store, customer, order, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -238,7 +238,7 @@ browserSync.init({
     {
       route: '/received_for_exchange',
       handle (req, res, next) {
-        receivedForExchange(store, customer, order, 'pt_br', 'recebido para troca')
+        receivedForExchange(store, customer, order, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
@@ -246,7 +246,7 @@ browserSync.init({
     {
       route: '/returned',
       handle (req, res, next) {
-        returned(store, customer, order, 'pt_br', 'retornado')
+        returned(store, customer, order, 'pt_br')
           .then(html => res.end(html))
           .catch(err => console.error(err))
       }
