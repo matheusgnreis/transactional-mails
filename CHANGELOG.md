@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/ecomplus/transactional-mails/compare/v1.3.0...v1.6.0) (2020-06-30)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#30](https://github.com/ecomplus/transactional-mails/issues/30)) ([5027f26](https://github.com/ecomplus/transactional-mails/commit/5027f26))
+* **deps:** update dependency ejs to v3 ([#34](https://github.com/ecomplus/transactional-mails/issues/34)) ([3b777d1](https://github.com/ecomplus/transactional-mails/commit/3b777d1))
+* **items:** using normal pictures ([4c22020](https://github.com/ecomplus/transactional-mails/commit/4c22020))
+* **logo.ejs:** preventing errors with stores without logo ([2ccb5f9](https://github.com/ecomplus/transactional-mails/commit/2ccb5f9))
+* **new-order:** skip using custom message for voided order ([5782a6e](https://github.com/ecomplus/transactional-mails/commit/5782a6e))
+* **views:** fixing order link to better ux ([9180633](https://github.com/ecomplus/transactional-mails/commit/9180633))
+
+
+### Features
+
+* **i18n:** adding new terms to vocabulary ([a3eb43a](https://github.com/ecomplus/transactional-mails/commit/a3eb43a))
+* **product:** adding product body to tests ([58e6ee6](https://github.com/ecomplus/transactional-mails/commit/58e6ee6))
+* **test:** adding products to test enviroment ([f0d7bc4](https://github.com/ecomplus/transactional-mails/commit/f0d7bc4))
+* **views:** adding tracking code and link to shipped mail ([69d0e2f](https://github.com/ecomplus/transactional-mails/commit/69d0e2f))
+* **views:** creating on promo and on stock mails ([174b55e](https://github.com/ecomplus/transactional-mails/commit/174b55e))
+
+
+### Tests
+
+* remove custom_message ([0fa8819](https://github.com/ecomplus/transactional-mails/commit/0fa8819))
+
+
+
 ## [1.5.0](https://github.com/ecomplus/transactional-mails/compare/v1.4.2...v1.5.0) (2020-06-23)
 
 
