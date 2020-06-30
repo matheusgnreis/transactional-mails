@@ -66,11 +66,11 @@
                                       <h1 style="padding-bottom: 10px;"><span style="color:#333333;">  <%= ecomUtils.name(product) %></span></h1>
                                       <% if (product.base_price) { %>
                                         <div"><span style="color:#333333;">
-                                          <p>de <%= ecomUtils.formatMoney(product.price) %> </p>
+                                          <p>de <%= ecomUtils.formatMoney(product.base_price) %> </p>
                                           </span></div>
-                                          <h2><span style="color:#333333;">por <%= ecomUtils.formatMoney(product.base_price) %></span></h2>
+                                          <h2><span style="color:#333333;">por <%= ecomUtils.formatMoney(product.price) %></span></h2>
                                       <% } else{ %>
-                                          <h3 ><span style="color:#333333;"> <%= ecomUtils.formatMoney(ecomUtils.price(product)) %></span></h3>
+                                          <h2 ><span style="color:#333333;"> <%= ecomUtils.formatMoney(ecomUtils.price(product)) %></span></h2>
                                       <% } %>
                                     </td>
                                   </tr>
