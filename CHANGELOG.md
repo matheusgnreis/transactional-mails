@@ -2,6 +2,56 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/ecomplus/transactional-mails/compare/v1.4.2...v1.5.0) (2020-06-23)
+
+
+### Features
+
+* **i18n:** adding new terms to vocabulary ([a3eb43a](https://github.com/ecomplus/transactional-mails/commit/a3eb43a))
+* **product:** adding product body to tests ([58e6ee6](https://github.com/ecomplus/transactional-mails/commit/58e6ee6))
+* **test:** adding products to test enviroment ([f0d7bc4](https://github.com/ecomplus/transactional-mails/commit/f0d7bc4))
+* **views:** creating on promo and on stock mails ([174b55e](https://github.com/ecomplus/transactional-mails/commit/174b55e))
+
+
+
+### [1.4.2](https://github.com/ecomplus/transactional-mails/compare/v1.4.1...v1.4.2) (2020-06-01)
+
+
+### Bug Fixes
+
+* **views:** fixing order link to better ux ([9180633](https://github.com/ecomplus/transactional-mails/commit/9180633))
+
+
+
+### [1.4.1](https://github.com/ecomplus/transactional-mails/compare/v1.4.0...v1.4.1) (2020-05-28)
+
+
+### Bug Fixes
+
+* **items:** using normal pictures ([4c22020](https://github.com/ecomplus/transactional-mails/commit/4c22020))
+
+
+
+## [1.4.0](https://github.com/ecomplus/transactional-mails/compare/v1.3.1...v1.4.0) (2020-05-20)
+
+
+### Features
+
+* **views:** adding tracking code and link to shipped mail ([69d0e2f](https://github.com/ecomplus/transactional-mails/commit/69d0e2f))
+
+
+
+### [1.3.1](https://github.com/ecomplus/transactional-mails/compare/v1.3.0...v1.3.1) (2020-05-08)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([#30](https://github.com/ecomplus/transactional-mails/issues/30)) ([5027f26](https://github.com/ecomplus/transactional-mails/commit/5027f26))
+* **deps:** update dependency ejs to v3 ([#34](https://github.com/ecomplus/transactional-mails/issues/34)) ([3b777d1](https://github.com/ecomplus/transactional-mails/commit/3b777d1))
+* **new-order:** skip using custom message for voided order ([5782a6e](https://github.com/ecomplus/transactional-mails/commit/5782a6e))
+
+
+
 ## [1.3.0](https://github.com/ecomplus/transactional-mails/compare/v1.2.4...v1.3.0) (2020-05-08)
 
 

@@ -50,7 +50,7 @@
                                           <h2><span style="color:#333333;"><%= custom_message.replace(/{name}/g, ecomUtils.nickname(customer)) %></span></h2>
                                         <% } else { %>
                                           <h2><span style="color:#333333;"><%= i18n.hello %> <%= customer.name.given_name %>, <%= i18n.authorized_title %></span></h2>
-                                        <% } %>  
+                                        <% } %>
                                     </td>
                                   </tr>
                                 </tbody>
@@ -74,9 +74,9 @@
                                         <div style="text-align: center;">
                                           <font color="#333333">
                                           <% if (shipping.posting_deadline) { %>
-                                            <%= i18n.order %> <a href="<% if (order.status_link) { %> <%= order.status_link %> <% } else{ %> <% if (store.homepage) { %> <%= store.homepage %>/app/#/account/orders/<%= order.number %> <% } else{ %> https://<%= store.domain %>/app/#/account/orders/<%= order.number %> <% } %> <% } %>">#<%= order.number %></a> <%= i18n.posting_in %> <strong>  <%= shipping.posting_deadline.days %> <% if (shipping.posting_deadline.working_days) { %> <%= i18n.working_days %> <% } else{ %> <%= i18n.days %> <% } %></strong> <%= i18n.following_address %>
+                                            <%= i18n.order %> <a href="<% if (order.status_link) { %> <%= order.status_link %> <% } else{ %> <% if (store.homepage) { %> <%= store.homepage %>/app/#/order/<%= order.number %>/<%= order._id %> <% } else{ %> https://<%= store.domain %>/app/#/order/<%= order.number %>/<%= order._id %> <% } %> <% } %>">#<%= order.number %></a> <%= i18n.posting_in %> <strong>  <%= shipping.posting_deadline.days %> <% if (shipping.posting_deadline.working_days) { %> <%= i18n.working_days %> <% } else{ %> <%= i18n.days %> <% } %></strong> <%= i18n.following_address %>
                                             <% } else{ %>
-                                            <%= i18n.order %> <a href="<% if (order.status_link) { %> <%= order.status_link %> <% } else{ %> <% if (store.homepage) { %> <%= store.homepage %>/app/#/account/orders/<%= order.number %> <% } else{ %> https://<%= store.domain %>/app/#/account/orders/<%= order.number %> <% } %> <% } %>">#<%= order.number %></a> <%= i18n.delivering_in %> <strong> <%= shipping.delivery_time.days %> <% if (shipping.delivery_time.working_days) { %> <%= i18n.working_days %> <% } else{ %> <%= i18n.days %> <% } %></strong> <%= i18n.on_following_address %>
+                                            <%= i18n.order %> <a href="<% if (order.status_link) { %> <%= order.status_link %> <% } else{ %> <% if (store.homepage) { %> <%= store.homepage %>/app/#/order/<%= order.number %>/<%= order._id %> <% } else{ %> https://<%= store.domain %>/app/#/order/<%= order.number %>/<%= order._id %> <% } %> <% } %>">#<%= order.number %></a> <%= i18n.delivering_in %> <strong> <%= shipping.delivery_time.days %> <% if (shipping.delivery_time.working_days) { %> <%= i18n.working_days %> <% } else{ %> <%= i18n.days %> <% } %></strong> <%= i18n.on_following_address %>
                                            <% } %>
                                           </font>
                                         </div>
@@ -98,7 +98,7 @@
                                         <tbody>
                                           <tr>
                                             <td align="center" bgcolor="<%= themeColor %>" class="inner-td" style="border-radius:6px;font-size:16px;text-align:center;background-color:inherit">
-                                              <a class="btn" style="background-color:<%= themeColor %>;border:1px solid #333333;border-color:#FFFFFF;border-radius:3px;border-width:1px;color:#FFFFFF;display:inline-block;font-family:arial,helvetica,sans-serif;font-size:16px;font-weight:normal;letter-spacing:0px;line-height:16px;padding:12px 10px 12px 10px;text-align:center;text-decoration:none" href="<% if (order.status_link) { %> <%= order.status_link %> <% } else{ %> <% if (store.homepage) { %> <%= store.homepage %>/app/#/account/orders/<%= order.number %> <% } else{ %> https://<%= store.domain %>/app/#/account/orders/<%= order.number %> <% } %> <% } %>" target="_blank"><%= i18n.order_cta %></a>
+                                              <a class="btn" style="background-color:<%= themeColor %>;border:1px solid #333333;border-color:#FFFFFF;border-radius:3px;border-width:1px;color:#FFFFFF;display:inline-block;font-family:arial,helvetica,sans-serif;font-size:16px;font-weight:normal;letter-spacing:0px;line-height:16px;padding:12px 10px 12px 10px;text-align:center;text-decoration:none" href="<% if (order.status_link) { %> <%= order.status_link %> <% } else{ %> <% if (store.homepage) { %> <%= store.homepage %>/app/#/order/<%= order.number %>/<%= order._id %> <% } else{ %> https://<%= store.domain %>/app/#/order/<%= order.number %>/<%= order._id %> <% } %> <% } %>" target="_blank"><%= i18n.order_cta %></a>
                                             </td>
                                           </tr>
                                           <tr>

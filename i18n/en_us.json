@@ -104,6 +104,11 @@
   "go_to_store": "Go to store",
   "banking_billet_text": "As soon as the payment is approved we will start to prepare your package.",
   "banking_billet_code": "If you haven't made the payment yet, do it with the code bellow:",
-  "banking_billet_print": "Print billet"
-
+  "banking_billet_print": "Print billet",
+  "traking_link": "Track your package through this",
+  "traking_code": "Track your package using the code",
+  "link": "link",
+  "stock_title": "A product you’ve wished is on stock",
+  "promo_title": "A product you’ve wished is for sale",
+  "product_cta": "Visualize product"
 }
