@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.1](https://github.com/ecomplus/transactional-mails/compare/v1.6.0...v1.6.1) (2020-06-30)
+
+
+### Bug Fixes
+
+* **warnme:** fixing prices on stock and promo mails ([38ef4bb](https://github.com/ecomplus/transactional-mails/commit/38ef4bb))
+
+
+
 ## [1.6.0](https://github.com/ecomplus/transactional-mails/compare/v1.3.0...v1.6.0) (2020-06-30)
 
 
