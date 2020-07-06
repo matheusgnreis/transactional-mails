@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.3](https://github.com/ecomplus/transactional-mails/compare/v1.6.2...v1.6.3) (2020-07-06)
+
+
+### Bug Fixes
+
+* **in_production.ejs:** ejs close tag ([3d99c10](https://github.com/ecomplus/transactional-mails/commit/3d99c10))
+
+
+
 ### [1.6.2](https://github.com/ecomplus/transactional-mails/compare/v1.6.1...v1.6.2) (2020-07-05)
 
 
