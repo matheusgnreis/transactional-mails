@@ -1,75 +1,60 @@
 {
-  "_id": "5ed15e8114ff772fde763fab",
   "buyers": [
     {
-      "_id": "5bb3747e2707d825d174c094",
-      "main_email": "leomp120894@gmail.com",
-      "display_name": "Léo",
+      "main_email": "matheus@e-com.club",
+      "display_name": "Matheus",
       "name": {
-        "given_name": "Leonardo",
-        "family_name": "Paula",
-        "middle_name": "Matos de"
+        "given_name": "Matheus",
+        "family_name": "Guedes"
       },
       "gender": "m",
-      "photos": [
-        "https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=1554921641256385&height=50&width=50&ext=1541079421&hash=AeSXFOR5cgPrkTF2"
-      ],
-      "phones": [
-        {
-          "number": "31995623633"
-        },
-        {
-          "number": "3137746558"
-        }
-      ],
-      "registry_type": "p",
-      "doc_number": "11035569671"
+      "photos": []
     }
   ],
   "items": [
     {
-      "product_id": "5c703700c626be23430d501e",
+      "product_id": "5c70168cc626be23430d4fd9",
       "picture": {
         "zoom": {
-          "url": "https://ecom-ptqgjveg.nyc3.digitaloceanspaces.com/@1550856815592-tela-notebook-lenovo-ideapad-330.jpg",
+          "url": "https://ecom-ptqgjveg.nyc3.digitaloceanspaces.com/@1550849536126-caixa-de-som-edifier-20-r1000t4-preta.jpg",
           "size": "410x410",
-          "alt": "tela-notebook-lenovo-ideapad-330"
+          "alt": "caixa-de-som-edifier-20-r1000t4-preta"
         },
         "small": {
-          "url": "https://ecom-ptqgjveg.nyc3.digitaloceanspaces.com/imgs/100px/@1550856815592-tela-notebook-lenovo-ideapad-330.jpg",
+          "url": "https://ecom-ptqgjveg.nyc3.digitaloceanspaces.com/imgs/100px/@1550849536126-caixa-de-som-edifier-20-r1000t4-preta.jpg",
           "size": "100x100",
-          "alt": "tela-notebook-lenovo-ideapad-330"
+          "alt": "caixa-de-som-edifier-20-r1000t4-preta"
         },
         "normal": {
-          "url": "https://ecom-ptqgjveg.nyc3.digitaloceanspaces.com/imgs/400px/@1550856815592-tela-notebook-lenovo-ideapad-330.jpg",
+          "url": "https://ecom-ptqgjveg.nyc3.digitaloceanspaces.com/imgs/400px/@1550849536126-caixa-de-som-edifier-20-r1000t4-preta.jpg",
           "size": "400x400",
-          "alt": "tela-notebook-lenovo-ideapad-330"
+          "alt": "caixa-de-som-edifier-20-r1000t4-preta"
         },
         "big": {
-          "url": "https://ecom-ptqgjveg.nyc3.digitaloceanspaces.com/imgs/700px/@1550856815592-tela-notebook-lenovo-ideapad-330.jpg",
+          "url": "https://ecom-ptqgjveg.nyc3.digitaloceanspaces.com/imgs/700px/@1550849536126-caixa-de-som-edifier-20-r1000t4-preta.jpg",
           "size": "700x700",
-          "alt": "tela-notebook-lenovo-ideapad-330"
+          "alt": "caixa-de-som-edifier-20-r1000t4-preta"
         }
       },
-      "quantity": 2,
-      "sku": "nb-lnv-9197",
-      "name": "Notebook Lenovo IdeaPad 330 15.6\" Celeron N4000 RAM 4GB HD 500GB",
-      "price": 2395.1,
-      "final_price": 2395.1,
-      "_id": "e15907795205841111111111"
+      "quantity": 1,
+      "sku": "cx-ed-1052",
+      "name": "Caixa de Som  2.0 Bivolt (24W) R1000T4",
+      "price": 367.26,
+      "final_price": 367.26,
+      "_id": "e15934561066801111111111"
     }
   ],
   "amount": {
-    "subtotal": 4790.2,
-    "discount": 1556.82,
-    "freight": 0,
-    "total": 3233.38
+    "subtotal": 367.26,
+    "discount": 0,
+    "freight": 27.94,
+    "total": 395.2
   },
   "shipping_lines": [
     {
-      "_id": "e15907795212251111111111",
+      "_id": "e15934561074061111111111",
       "app": {
-        "_id": "5e8fe39eba89aa0572126353",
+        "_id": "5ef173d214ff772fde7ac45a",
         "label": "PAC",
         "carrier": "Correios",
         "carrier_doc_number": "34028316000103",
@@ -77,60 +62,42 @@
         "service_name": "PAC"
       },
       "from": {
-        "zip": "30310020"
+        "zip": "35701274"
       },
       "to": {
-        "zip": "30310020",
         "province_code": "MG",
-        "number": 249,
-        "city": "Belo Horizonte",
-        "borough": "Carmo",
-        "street": "Rua Outono",
-        "complement": "Apto. 301",
-        "name": "Leonardo Matos"
+        "name": "Matheus",
+        "city": "Belo Horizonte"
       },
       "price": 21,
-      "declared_value": 2395.1,
-      "declared_value_price": 47.49,
+      "declared_value": 367.26,
+      "declared_value_price": 6.94,
       "own_hand": false,
       "own_hand_price": 0,
       "receipt": false,
       "receipt_price": 0,
-      "discount": 68.49,
-      "total_price": 0,
+      "discount": 0,
+      "total_price": 27.94,
       "delivery_time": {
         "days": 8,
         "working_days": true
       },
       "posting_deadline": {
-        "days": 2,
+        "days": 3,
         "working_days": true,
         "after_approval": true
       },
       "flags": [
         "correios-ws"
       ],
-      "custom_fields": [
-        {
-          "field": "correios_ws_params",
-          "value": "sCepOrigem=30310020&sCepDestino=30310020&nCdEmpresa=c&sDsSenha=s&nCdServico=04510&sCdMaoPropria=n&sCdAvisoRecebimento=n&nVlPeso=1&nVlValorDeclarado=2395.1&nVlComprimento=16&nVlAltura=2&nVlLargura=11"
-        }
-      ]
+      "status": {
+        "updated_at": "2020-06-29T23:11:27.667Z",
+        "current": "ready_for_shipping"
+      }
     }
   ],
   "shipping_method_label": "PAC",
-  "payment_method_label": "Pagamento na entrega",
-  "extra_discount": {
-    "discount_coupon": "",
-    "value": 838.285,
-    "flags": [
-      "OPEN"
-    ],
-    "app": {
-      "label": "10000R$ 50%",
-      "_id": "5ecea9b3126b0d057215daf7"
-    }
-  },
+  "payment_method_label": "Boleto bancário",
   "staff_signature": false,
   "source_name": "Web",
   "channel_type": "ecommerce",
@@ -138,61 +105,113 @@
   "currency_id": "BRL",
   "currency_symbol": "R$",
   "budget_only": false,
-  "number": 7004,
+  "number": 7084,
   "transactions": [
     {
+      "amount": 395.2,
+      "banking_billet": {
+        "text_lines": [
+          "Testando"
+        ],
+        "code": "1234 5678",
+        "link": "https://pagar.me",
+        "valid_thru": "2020-07-13T03:00:00.000Z"
+      },
       "intermediator": {
         "payment_method": {
-          "code": "other"
-        }
+          "code": "boleto"
+        },
+        "transaction_id": "9084544",
+        "transaction_code": "9084544",
+        "buyer_id": "3351913"
       },
-      "currency_id": "BRL",
-      "currency_symbol": "R$",
-      "discount": 1556.82,
-      "amount": 838.28,
+      "payment_link": "https://pagar.me",
       "status": {
-        "updated_at": "2020-05-29T19:12:02.236Z",
-        "current": "pending"
+        "updated_at": "2020-06-29T23:10:56.690Z",
+        "current": "paid"
       },
-      "flags": [
-        "app-custom-payments"
-      ],
       "type": "payment",
       "payment_method": {
-        "code": "other"
+        "code": "banking_billet",
+        "name": "Boleto bancário - Pagar.me"
       },
       "app": {
-        "_id": "5ecf555c126b0d057215fe10",
-        "label": "Pagamento na entrega"
+        "_id": "5ea759535ac4060578b65692",
+        "label": "Boleto bancário",
+        "intermediator": {
+          "name": "Pagar.me",
+          "link": "https://pagar.me/",
+          "code": "pagarme"
+        }
       },
-      "_id": "5ed15e8214ff772fde763fad"
+      "_id": "5efa35ed14ff772fde7bde58"
     }
   ],
   "payments_history": [
     {
-      "transaction_id": "5ed15e8214ff772fde763fad",
-      "date_time": "2020-05-29T19:12:02.236Z",
+      "transaction_id": "5efa35ed14ff772fde7bde58",
+      "date_time": "2020-06-29T18:41:49.118Z",
       "status": "pending",
       "flags": [
-        "cpm:patch",
+        "cpm-skip",
         "cpm"
       ],
       "customer_notified": false,
-      "_id": "5ed15e9214ff772fde763fbf"
+      "_id": "5efa35f814ff772fde7bde67"
     },
     {
       "status": "pending",
-      "date_time": "2020-05-29T19:12:02.236Z",
+      "date_time": "2020-06-29T18:41:49.118Z",
       "flags": [
         "cpm-skip",
         "checkout"
       ],
+      "customer_notified": true,
+      "_id": "5efa35ed14ff772fde7bde5a"
+    },
+    {
+      "date_time": "2020-06-29T18:41:49.633Z",
+      "status": "pending",
+      "notification_code": "cf0de38b8ccc94b585393bbc451d0498b09b571c",
+      "flags": [
+        "cpm-skip",
+        "cpm:patch",
+        "pagarme",
+        "old:processing"
+      ],
+      "transaction_id": "5efa35ed14ff772fde7bde58",
       "customer_notified": false,
-      "_id": "5ed15e8214ff772fde763faf"
+      "_id": "5efa35ed14ff772fde7bde5c"
+    },
+    {
+      "status": "paid",
+      "date_time": "2020-06-29T23:10:56.690Z",
+      "flags": [
+        "cpm:patch",
+        "cpm:post"
+      ],
+      "customer_notified": true,
+      "_id": "5efa750014ff772fde7bf942"
     }
   ],
   "financial_status": {
-    "updated_at": "2020-05-29T19:12:02.236Z",
-    "current": "pending"
-  }
+    "updated_at": "2020-06-29T23:10:56.690Z",
+    "current": "paid"
+  },
+  "fulfillment_status": {
+    "updated_at": "2020-06-29T23:11:27.667Z",
+    "current": "ready_for_shipping"
+  },
+  "fulfillments": [
+    {
+      "status": "ready_for_shipping",
+      "date_time": "2020-06-29T23:11:27.667Z",
+      "flags": [
+        "cpm:patch",
+        "cpm:post"
+      ],
+      "customer_notified": true,
+      "_id": "5efa751f14ff772fde7bf94f"
+    }
+  ]
 }

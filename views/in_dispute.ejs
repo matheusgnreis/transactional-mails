@@ -62,7 +62,7 @@
 
                                     <td style="padding:0px 10px 30px 10px;line-height:22px;text-align:inherit;" height="100%" valign="top" bgcolor="">
                                         <div style="padding:0px 45px 0px 45px;text-align: center;"><font color="#333333">
-                                           <%= i18n.in_dispute_text %> <%= i18n.info %> <a href="<%= store.domain %>/app/#/account/"><%= i18n.my_acc %></a> <%= i18n.contact_us %>
+                                           <%= i18n.in_dispute_text %> <%= i18n.info %> <a href="<%= store.homepage || `https://${store.domain}` %>/app/#/account/"><%= i18n.my_acc %></a> <%= i18n.contact_us %>
                                         </font></div>
                                     </td>
 
@@ -79,7 +79,7 @@
                                       valign="top"
                                       bgcolor="">
                                       <div style="text-align: center;"><span style="color:#333333;">
-                                        <p><%= i18n.or %> <a href="<% if (store.homepage) { %> <%= store.homepage %> <% } else{ %> https://<%= store.domain %> <% } %>"><%= i18n.visit_store %></a> </p>
+                                        <p><%= i18n.or %> <a href="<%= store.homepage || `https://${store.domain}` %>"><%= i18n.visit_store %></a> </p>
 
                                         </span></div>
                                   </td>

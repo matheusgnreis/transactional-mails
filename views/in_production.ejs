@@ -106,9 +106,7 @@ if (order.status_link) {
                                                     <%= i18n.days %>
                                                     <% } %>
                                                   </strong>
-
-                                                  <%= i18n.following_address %>
-
+                                                  
                                                   <%= i18n.delivering_in %>
                                                   <strong>
                                                     <%= shipping.delivery_time.days %>
@@ -126,15 +124,15 @@ if (order.status_link) {
                                               <br>
 
                                               <div style="text-align: center;">
-                                                <font color="#333333"><%= shipping.to.street %>, nº
+                                                <font color="#333333"><%= shipping.to && shipping.to.street %>, nº
                                                   <%= shipping.to.number %></font>
                                               </div>
                                               <div style="text-align: center;">
-                                                <font color="#333333"><%= shipping.to.city %>,
-                                                  <%= shipping.to.province_code %>, <%= shipping.to.zip %></font>
+                                                <font color="#333333"><%= shipping.to && shipping.to.city %>,
+                                                  <%= shipping.to && shipping.to.province_code %>, <%= shipping.to && shipping.to.zip %></font>
                                               </div>
                                               <div style="text-align: center;">
-                                                <font color="#333333"><%= i18n.shipped_by %> <%= shipping.app.carrier %>
+                                                <font color="#333333"><%= i18n.shipped_by %> <%= shipping.app && shipping.app.carrier %>
                                                 </font>
                                               </div>
                                             </td>
@@ -160,18 +158,20 @@ if (order.status_link) {
                                                       <a class="btn"
                                                         style="background-color:<%= themeColor %>;border:1px solid #333333;border-color:#FFFFFF;border-radius:3px;border-width:1px;color:#FFFFFF;display:inline-block;font-family:arial,helvetica,sans-serif;font-size:16px;font-weight:normal;letter-spacing:0px;line-height:16px;padding:12px 10px 12px 10px;text-align:center;text-decoration:none"
                                                         href="<%= orderLink %> "
-                                                        target="_blank"><%= i18n.order_cta %></a></td>
+                                                        target="_blank"><%= i18n.order_cta %></a>
+                                                    </td>
                                                   </tr>
                                                   <tr>
                                                     <td
                                                       style="padding: 30px 45px 0px 45px;line-height:22px;text-align:inherit;"
                                                       height="100%" valign="top" bgcolor="">
-                                                      <div style="text-align: center;"><span style="color:#333333;">
+                                                      <div style="text-align: center;">
+                                                        <span style="color:#333333;">
                                                           <p><%= i18n.or %> <a
-                                                              href="<% if (store.homepage) { %> <%= store.homepage %> <% } else{ %> https://<%= store.domain %> <% } %>"><%= i18n.visit_store %></a>
+                                                              href="<%= store.homepage || `https://${store.domain}` %>"><%= i18n.visit_store %></a>
                                                           </p>
-
-                                                        </span></div>
+                                                        </span>
+                                                      </div>
                                                     </td>
                                                   </tr>
                                                 </tbody>
