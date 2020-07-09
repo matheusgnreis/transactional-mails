@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.6.5](https://github.com/ecomplus/transactional-mails/compare/v1.6.4...v1.6.5) (2020-07-09)
+
+
+### Bug Fixes
+
+* **templates:** preventing errors with nested objects ([98b9acd](https://github.com/ecomplus/transactional-mails/commit/98b9acd))
+
+
+
 ### [1.6.4](https://github.com/ecomplus/transactional-mails/compare/v1.6.3...v1.6.4) (2020-07-08)
 
 
