@@ -109,20 +109,18 @@
 
                                                   <%= i18n.posting_in %>
                                                   <strong>
-                                                    <%= shipping.posting_deadline.days %>
-                                                    <% if (shipping.posting_deadline.working_days) { %>
+                                                    <%= shipping.posting_deadline && shipping.posting_deadline.days %>
+                                                    <% if (shipping.posting_deadline && shipping.posting_deadline.working_days) { %>
                                                     <%= i18n.working_days %>
                                                     <% } else { %>
                                                     <%= i18n.days %>
                                                     <% } %>
                                                   </strong>
-
-                                                  <%= i18n.following_address %>
-
+                                                  
                                                   <%= i18n.delivering_in %>
                                                   <strong>
-                                                    <%= shipping.delivery_time.days %>
-                                                    <% if (shipping.delivery_time.working_days) { %>
+                                                    <%= shipping.delivery_time && shipping.delivery_time.days %>
+                                                    <% if (shipping.delivery_time && shipping.delivery_time.working_days) { %>
                                                     <%= i18n.working_days %>
                                                     <% } else { %>
                                                     <%= i18n.days %>
