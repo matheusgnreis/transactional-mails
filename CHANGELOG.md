@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/ecomplus/transactional-mails/compare/v1.6.6...v1.7.0) (2020-09-21)
+
+
+### Features
+
+* **mails:** specifing texts when picking order up ([e03617d](https://github.com/ecomplus/transactional-mails/commit/e03617d))
+
+
+
 ### [1.6.6](https://github.com/ecomplus/transactional-mails/compare/v1.6.5...v1.6.6) (2020-09-02)
 
 
