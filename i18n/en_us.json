@@ -110,5 +110,9 @@
   "link": "link",
   "stock_title": "A product you’ve wished is on stock",
   "promo_title": "A product you’ve wished is for sale",
-  "product_cta": "Visualize product"
+  "product_cta": "Visualize product",
+  "available_pickup": "will be available for pickup at our store in",
+  "pickedup": "Picked up at our store",
+  "pickup": "is available for pickup at our store.",
+  "and": "and"
 }

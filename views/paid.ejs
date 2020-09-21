@@ -68,56 +68,87 @@
                               </table>
 
                               <% if (order.shipping_lines) { %>
-                                <table class="module" role="module" data-type="text" border="0" cellpadding="0"
-                                  cellspacing="0" width="100%" style="table-layout: fixed;">
-                                  <tbody>
-                                    <tr>
-                                      <% order.shipping_lines.forEach(shipping => {%>
-                                      <td style="padding:10px 50px 10px 50px;line-height:22px;text-align:inherit;"
-                                        height="100%" valign="top" bgcolor="">
-                                        <div style="text-align: center;">
-                                          <font color="#333333">
-                                            <%= i18n.order %>
-                                            <a href="<%= (order.status_link) ? order.status_link : `${('https://' + store.domain || store.homepage)}/app/#/order/${order.number}/${order._id}` %>">
-                                              <%= order.number %>
-                                            </a>
+                              <table class="module" role="module" data-type="text" border="0" cellpadding="0"
+                                cellspacing="0" width="100%" style="table-layout: fixed;">
+                                <tbody>
+                                  <tr>
 
-                                            <%= i18n.delivering_in %>
-                                            <strong>
-                                              <%= shipping.delivery_time && shipping.delivery_time.days %>
-                                              <% if (shipping.delivery_time && shipping.delivery_time.working_days) { %>
-                                              <%= i18n.working_days %>
-                                              <% } else { %>
-                                              <%= i18n.days %>
-                                              <% } %>
-                                            </strong>
+                                    <% order.shipping_lines.forEach(shipping => {%>
 
-                                            <%= i18n.on_following_address %>
+                                      <% if (order.shipping_method_label == 'Retirar na loja') { %>
+                                        <td style="padding:10px 50px 10px 50px;line-height:22px;text-align:inherit;"
+                                          height="100%" valign="top" bgcolor="">
+                                          <div style="text-align: center;">
+                                            <font color="#333333">
+                                              <%= i18n.order %>
+                                              <a href="<%= (order.status_link) ? order.status_link : `${('https://' + store.domain || store.homepage)}/app/#/order/${order.number}/${order._id}` %>">#<%= order.number %></a>
 
-                                            <br>
+                                              <%= i18n.available_pickup %>
+                                              <strong>
+                                                <%= shipping.delivery_time && shipping.delivery_time.days %>
+                                                <% if (shipping.delivery_time && shipping.delivery_time.working_days) { %>
+                                                <%= i18n.working_days %>
+                                                <% } else { %>
+                                                <%= i18n.days %>
+                                                <% } %>
+                                              </strong>
+                                            </font>
+                                          </div>
+                                        </td>
+                                      <% } else { %>
+                                    <td style="padding:10px 50px 10px 50px;line-height:22px;text-align:inherit;"
+                                      height="100%" valign="top" bgcolor="">
+                                      <div style="text-align: center;">
+                                        <font color="#333333">
+                                          <%= i18n.order %>
+                                          <a href="<%= (order.status_link) ? order.status_link : `${('https://' + store.domain || store.homepage)}/app/#/order/${order.number}/${order._id}` %>">#<%= order.number %></a>
+                                          <%= i18n.posting_in %>
+                                          <strong>
+                                            <%= shipping.posting_deadline && shipping.posting_deadline.days %>
+                                            <% if (shipping.posting_deadline && shipping.posting_deadline.working_days) { %>
+                                            <%= i18n.working_days %>
+                                            <% } else { %>
+                                            <%= i18n.days %>
+                                            <% } %>
+                                          </strong>
+                                          <%= i18n.and %>
+                                          <%= i18n.delivering_in %>
+                                          <strong>
+                                            <%= shipping.delivery_time && shipping.delivery_time.days %>
+                                            <% if (shipping.delivery_time && shipping.delivery_time.working_days) { %>
+                                            <%= i18n.working_days %>
+                                            <% } else { %>
+                                            <%= i18n.days %>
+                                            <% } %>
+                                          </strong>
 
-                                            <div style="text-align: center;">
-                                              <font color="#333333"><%= shipping.to && shipping.to.street %>, nº
-                                                <%= shipping.to.number %></font>
-                                            </div>
-                                            <div style="text-align: center;">
-                                              <font color="#333333"><%= shipping.to && shipping.to.city %>,
-                                                <%= shipping.to && shipping.to.province_code %>,
-                                                <%= shipping.to && shipping.to.zip %></font>
-                                            </div>
-                                            <div style="text-align: center;">
-                                              <font color="#333333"><%= i18n.shipped_by %>
-                                                <%= shipping.app && shipping.app.carrier %>
-                                              </font>
-                                            </div>
-                                          </font>
-                                        </div>
-                                      </td>
-                                      <% }) %>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                                <% } %>
+                                          <%= i18n.on_following_address %>
+
+                                          <br>
+
+                                          <div style="text-align: center;">
+                                            <font color="#333333"><%= shipping.to && shipping.to.street %>, nº
+                                              <%= shipping.to.number %></font>
+                                          </div>
+                                          <div style="text-align: center;">
+                                            <font color="#333333"><%= shipping.to && shipping.to.city %>,
+                                              <%= shipping.to && shipping.to.province_code %>,
+                                              <%= shipping.to && shipping.to.zip %></font>
+                                          </div>
+                                          <div style="text-align: center;">
+                                            <font color="#333333"><%= i18n.shipped_by %>
+                                              <%= shipping.app && shipping.app.carrier %>
+                                            </font>
+                                          </div>
+                                        </font>
+                                      </div>
+                                    </td>
+                                    <% } %>
+                                    <% }) %>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <% } %>
 
                                 <table border="0" cellpadding="0" cellspacing="10" class="module"
                                   data-role="module-button" data-type="button" role="module"

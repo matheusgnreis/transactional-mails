@@ -66,7 +66,7 @@
                                               </tr>
                                             </tbody>
                                           </table>
-                                        
+
                                           <table class="module" role="module" data-type="text" border="0" cellpadding="0"
                                             cellspacing="0" width="100%" style="table-layout: fixed;">
                                             <tbody>
@@ -82,7 +82,7 @@
                                               </tr>
                                             </tbody>
                                           </table>
-                                        
+
                                           <table border="0" cellpadding="0" cellspacing="10" class="module"
                                             data-role="module-button" data-type="button" role="module"
                                             style="table-layout:fixed" width="100%">
@@ -109,7 +109,7 @@
                                                               <p><%= i18n.or %> <a
                                                                   href="<%= `${('https://' + store.domain || store.homepage)}/app/#/account/orders/${order.number}/${order._id}` %>"> <%= i18n.view_order %></a>
                                                               </p>
-                                        
+
                                                             </span></div>
                                                         </td>
                                                       </tr>
@@ -119,9 +119,9 @@
                                               </tr>
                                             </tbody>
                                           </table>
-                                        
+
                                         <% } else if (order.financial_status.current == 'pending') { %>
-                                        
+
                                             <table class="module" style="padding:0px 10px 30px 10px;" role="module"
                                               data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%"
                                               style="table-layout: fixed;">
@@ -142,7 +142,7 @@
                                                 </tr>
                                               </tbody>
                                             </table>
-                                        
+
                                             <% if (order.transactions && order.transactions.length > 0) { %>
                                               <% order.transactions.forEach(transaction => { %>
                                                 <% if (transaction.payment_method && transaction.payment_method.code == 'banking_billet' ) { %>
@@ -156,7 +156,7 @@
                                                             <font color="#333333">
                                                               <%= i18n.banking_billet_text %>
                                                               <% if (transaction.banking_billet && transaction.banking_billet.code ) { %>
-                                                                <%= i18n.banking_billet_code %> 
+                                                                <%= i18n.banking_billet_code %>
                                                               <% } %>
                                                             </font>
                                                           </div>
@@ -164,7 +164,7 @@
                                                       </tr>
                                                     </tbody>
                                                   </table>
-                                        
+
                                                   <table class="module" style="padding:20px 30px 30px 30px;" role="module"
                                                     data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%"
                                                     style="table-layout: fixed;">
@@ -179,7 +179,7 @@
                                                             </h3>
                                                           </td>
                                                         <% } %>
-                                        
+
                                                         <% if (transaction.banking_billet && transaction.banking_billet.link) { %>
                                                           <td align="center" bgcolor="<%= themeColor %>" class="inner-td"
                                                             style="font-size:16px;text-align:center;background-color:inherit">
@@ -195,9 +195,9 @@
                                                       </tr>
                                                     </tbody>
                                                   </table>
-                                        
+
                                                 <% } else { %>
-                                        
+
                                                   <table class="module" role="module" data-type="text" border="0" cellpadding="0"
                                                     cellspacing="0" width="100%" style="table-layout: fixed;">
                                                     <tbody>
@@ -216,9 +216,9 @@
                                                 <% } %>
                                               <% }) %>
                                             <% } %>
-                                        
+
                                         <% } else if (order.financial_status.current == 'paid') { %>
-                                        
+
                                           <table class="module" style="padding:0px 10px 30px 10px;" role="module"
                                             data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%"
                                             style="table-layout: fixed;">
@@ -239,7 +239,7 @@
                                               </tr>
                                             </tbody>
                                           </table>
-                                        
+
                                           <table class="module" role="module" data-type="text" border="0" cellpadding="0"
                                             cellspacing="0" width="100%" style="table-layout: fixed;">
                                             <tbody>
@@ -255,7 +255,7 @@
                                               </tr>
                                             </tbody>
                                           </table>
-                                        
+
                                         <% } else { %>
                                           <table class="module" style="padding:0px 10px 30px 10px;" role="module"
                                             data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%"
@@ -277,7 +277,7 @@
                                               </tr>
                                             </tbody>
                                           </table>
-                                        
+
                                           <table class="module" role="module" data-type="text" border="0" cellpadding="0"
                                             cellspacing="0" width="100%" style="table-layout: fixed;">
                                             <tbody>
@@ -301,7 +301,7 @@
                                               </tr>
                                             </tbody>
                                           </table>
-                                        
+
                                         <% } %>
                                       <% } else { %>
                                         <table class="module" style="padding:0px 10px 30px 10px;" role="module"
@@ -324,7 +324,7 @@
                                           </tr>
                                         </tbody>
                                         </table>
-                                        
+
                                         <% if (order.transactions && order.transactions.length > 0) { %>
                                         <% order.transactions.forEach(transaction => { %>
                                           <% if (transaction.payment_method && transaction.payment_method.code == 'banking_billet' ) { %>
@@ -338,7 +338,7 @@
                                                       <font color="#333333">
                                                         <%= i18n.banking_billet_text %>
                                                         <% if (transaction.banking_billet && transaction.banking_billet.code ) { %>
-                                                          <%= i18n.banking_billet_code %> 
+                                                          <%= i18n.banking_billet_code %>
                                                         <% } %>
                                                       </font>
                                                     </div>
@@ -346,7 +346,7 @@
                                                 </tr>
                                               </tbody>
                                             </table>
-                                        
+
                                             <table class="module" style="padding:20px 30px 30px 30px;" role="module"
                                               data-type="text" border="0" cellpadding="0" cellspacing="0" width="100%"
                                               style="table-layout: fixed;">
@@ -361,7 +361,7 @@
                                                       </h3>
                                                     </td>
                                                   <% } %>
-                                        
+
                                                   <% if (transaction.banking_billet && transaction.banking_billet.link) { %>
                                                     <td align="center" bgcolor="<%= themeColor %>" class="inner-td"
                                                       style="font-size:16px;text-align:center;background-color:inherit">
@@ -377,9 +377,9 @@
                                                 </tr>
                                               </tbody>
                                             </table>
-                                        
+
                                           <% } else { %>
-                                        
+
                                             <table class="module" role="module" data-type="text" border="0" cellpadding="0"
                                               cellspacing="0" width="100%" style="table-layout: fixed;">
                                               <tbody>
@@ -397,9 +397,9 @@
                                             </table>
                                           <% } %>
                                         <% }) %>
-                                        
+
                                         <% } else { %>
-                                        
+
                                         <table class="module" role="module" data-type="text" border="0" cellpadding="0"
                                         cellspacing="0" width="100%" style="table-layout: fixed;">
                                         <tbody>
@@ -415,7 +415,7 @@
                                           </tr>
                                         </tbody>
                                         </table>
-                                        
+
                                         <table border="0" cellpadding="0" cellspacing="10" class="module"
                                         data-role="module-button" data-type="button" role="module"
                                         style="table-layout:fixed" width="100%">
@@ -441,7 +441,7 @@
                                                       <div style="text-align: center;">
                                                         <span style="color:#333333;">
                                                           <p>
-                                                              <%= i18n.or %> 
+                                                              <%= i18n.or %>
                                                               <a href="<%= `${('https://' + store.domain || store.homepage)}/app/#/account/orders/${order.number}/${order._id}` %>"><%= i18n.view_order %></a>
                                                           </p>
                                                         </span>
@@ -454,7 +454,7 @@
                                           </tr>
                                         </tbody>
                                         </table>
-                                        
+
                                         <% } %>
                                       <% } %>
 
@@ -470,30 +470,76 @@
                                                       height="100%" valign="top" bgcolor="">
                                                       <div style="text-align: center;">
                                                         <font color="#333333">
-                                                          <% if (shipping.posting_deadline) { %>                                                           
+                                                          <% if (shipping.posting_deadline) { %>
                                                             <% if ( order.financial_status.current !== 'paid') { %>
-                                                              <%= i18n.after_payment %> 
-                                                              <%= i18n.following_address %>
-                                                            <% } else { %>
-                                                              <%= i18n.order %> <a
-                                                              href="<%= (order.status_link) ? order.status_link : `${('https://' + store.domain || store.homepage)}/app/#/order/${order.number}/${order._id}` %>">#<%= order.number %></a>
-                                                              <%= i18n.delivering_in %> 
-                                                              <strong> 
+                                                                    <% if (order.shipping_method_label == 'Retirar na loja') { %>
+                                                                      <%= i18n.order %>
+                                                                      <a href="<%= (order.status_link) ? order.status_link : `${('https://' + store.domain || store.homepage)}/app/#/order/${order.number}/${order._id}` %>">#<%= order.number %></a>
+                                                                      
+                                                                      <%= i18n.available_pickup %>
+                                                                      <strong>
+                                                                        <%= shipping.delivery_time && shipping.delivery_time.days %>
+                                                                        <% if (shipping.delivery_time && shipping.delivery_time.working_days) { %>
+                                                                        <%= i18n.working_days %>
+                                                                        <% } else { %>
+                                                                        <%= i18n.days %>
+                                                                        <% } %>
+                                                                      </strong>
+                                                              <% } else { %>
+                                                              <%= i18n.order %>
+                                                              <a href="<%= (order.status_link) ? order.status_link : `${('https://' + store.domain || store.homepage)}/app/#/order/${order.number}/${order._id}` %>">#<%= order.number %></a>
+                                                              <%= i18n.delivering_in %>
+                                                              <strong>
                                                                 <%= shipping.delivery_time.days %>
                                                                 <% if (shipping.delivery_time.working_days) { %>
-                                                                  <%= i18n.working_days %> 
-                                                                <% } else { %> 
+                                                                  <%= i18n.working_days %>
+                                                                <% } else { %>
+                                                                    <%= i18n.days %>
+                                                                <% } %>
+                                                              </strong>
+                                                              <%= i18n.after_payment %>
+                                                              <%= i18n.following_address %>
+                                                            <% } %>
+                                                            <% } else { %>
+
+                                                              <% if (order.shipping_method_label == 'Retirar na loja') { %>
+                                                                      <%= i18n.order %>
+                                                                      <a href="<%= (order.status_link) ? order.status_link : `${('https://' + store.domain || store.homepage)}/app/#/order/${order.number}/${order._id}` %>">#<%= order.number %></a>
+                                                                      </a>
+
+                                                                      <%= i18n.available_pickup %>
+                                                                      <strong>
+                                                                        <%= shipping.delivery_time && shipping.delivery_time.days %>
+                                                                        <% if (shipping.delivery_time && shipping.delivery_time.working_days) { %>
+                                                                        <%= i18n.working_days %>
+                                                                        <% } else { %>
+                                                                        <%= i18n.days %>
+                                                                        <% } %>
+                                                                      </strong>
+
+                                                              <% } else { %>
+
+                                                              <%= i18n.order %> <a
+                                                              href="<%= (order.status_link) ? order.status_link : `${('https://' + store.domain || store.homepage)}/app/#/order/${order.number}/${order._id}` %>">#<%= order.number %></a>
+                                                              <%= i18n.delivering_in %>
+                                                              <strong>
+                                                                <%= shipping.delivery_time.days %>
+                                                                <% if (shipping.delivery_time.working_days) { %>
+                                                                  <%= i18n.working_days %>
+                                                                <% } else { %>
                                                                     <%= i18n.days %>
                                                                 <% } %>
                                                               </strong>
 
                                                               <%= i18n.on_following_address %>
-                                                            <% } %>
+
+
+                                                            <% } } %>
                                                         </font>
                                                       </div>
                                                       <% } %>
                                                       <br>
-
+                                                      <% if (order.shipping_method_label !== 'Retirar na loja') { %>
                                                       <div style="text-align: center;">
                                                         <font color="#333333"><%= shipping.to && shipping.to.street %>, nº
                                                           <%= shipping.to.number %></font>
@@ -508,6 +554,7 @@
                                                           <%= shipping.app && shipping.app.carrier %>
                                                         </font>
                                                       </div>
+                                                      <% } %>
                                                     </td>
                                               </tr>
                                             </tbody>
@@ -563,11 +610,11 @@
                                                     <div style="text-align: center;">
                                                       <font color="#333333">
                                                         <% if (shipping.posting_deadline) { %>
-                                                          <%= i18n.order %> 
+                                                          <%= i18n.order %>
                                                           <a href="<%= (order.status_link) ? order.status_link : `${('https://' + store.domain || store.homepage)}/app/#/order/${order.number}/${order._id}` %>">
                                                             #<%= order.number %>
                                                           </a>
-                                                          
+
                                                           <%= i18n.posting_in %>
                                                           <strong>
                                                             <%= shipping.posting_deadline && shipping.posting_deadline.days %>
@@ -579,7 +626,7 @@
                                                           </strong>
 
                                                           <% if ( order.financial_status.current !== 'paid') { %>
-                                                            <%= i18n.after_payment %> 
+                                                            <%= i18n.after_payment %>
                                                             <%= i18n.following_address %>
                                                           <% } else { %>
                                                             <%= i18n.order %> <a
@@ -661,7 +708,7 @@
                                         </table>
                                       <% } %>
                                     <% } %>
-                                    
+
                                       <table class="module" role="module" data-type="text" border="0" cellpadding="0"
                                         cellspacing="0" width="100%" style="table-layout: fixed;">
                                         <tbody>

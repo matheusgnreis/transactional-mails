@@ -112,5 +112,9 @@
   "link": "link",
   "stock_title": "O produto que deseja está em estoque",
   "promo_title": "O produto que deseja está em promoção",
-  "product_cta": "Visualizar o produto"
+  "product_cta": "Visualizar o produto",
+  "available_pickup": "estará disponível para a retirada em nossa loja em",
+  "pickedup": "Retirado em nossa loja",
+  "pickup": "está disponível para a retirada em nossa loja.",
+  "and": "e"
 }
