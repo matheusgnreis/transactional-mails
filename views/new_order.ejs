@@ -472,10 +472,10 @@
                                                         <font color="#333333">
                                                           <% if (shipping.posting_deadline) { %>
                                                             <% if ( order.financial_status.current !== 'paid') { %>
-                                                                    <% if (order.shipping_method_label == 'Retirar na loja') { %>
+                                                                    <% if (order.shipping_method_label.indexOf("etirar") != -1) { %>
                                                                       <%= i18n.order %>
                                                                       <a href="<%= (order.status_link) ? order.status_link : `${('https://' + store.domain || store.homepage)}/app/#/order/${order.number}/${order._id}` %>">#<%= order.number %></a>
-                                                                      
+
                                                                       <%= i18n.available_pickup %>
                                                                       <strong>
                                                                         <%= shipping.delivery_time && shipping.delivery_time.days %>
@@ -485,6 +485,23 @@
                                                                         <%= i18n.days %>
                                                                         <% } %>
                                                                       </strong>
+
+                                                                      <% } else if (order.shipping_method_label.indexOf("mail") != -1) { %>
+
+                                                                              <%= i18n.order %>
+                                                                              <a href="<%= (order.status_link) ? order.status_link : `${('https://' + store.domain || store.homepage)}/app/#/order/${order.number}/${order._id}` %>">#<%= order.number %></a>
+
+                                                                              <%= i18n.will_mail %>
+                                                                              <strong>
+                                                                                <%= shipping.delivery_time && shipping.delivery_time.days %>
+                                                                                <% if (shipping.delivery_time && shipping.delivery_time.working_days) { %>
+                                                                                <%= i18n.working_days %>
+                                                                                <% } else { %>
+                                                                                <%= i18n.days %>
+                                                                                <% } %>
+                                                                              </strong>
+                                                                              <%= i18n.after_payment %>
+
                                                               <% } else { %>
                                                               <%= i18n.order %>
                                                               <a href="<%= (order.status_link) ? order.status_link : `${('https://' + store.domain || store.homepage)}/app/#/order/${order.number}/${order._id}` %>">#<%= order.number %></a>
@@ -502,7 +519,7 @@
                                                             <% } %>
                                                             <% } else { %>
 
-                                                              <% if (order.shipping_method_label == 'Retirar na loja') { %>
+                                                              <% if (order.shipping_method_label.indexOf("etirar") != -1) { %>
                                                                       <%= i18n.order %>
                                                                       <a href="<%= (order.status_link) ? order.status_link : `${('https://' + store.domain || store.homepage)}/app/#/order/${order.number}/${order._id}` %>">#<%= order.number %></a>
                                                                       </a>
@@ -516,6 +533,22 @@
                                                                         <%= i18n.days %>
                                                                         <% } %>
                                                                       </strong>
+
+                                                                      <% } else if (order.shipping_method_label.indexOf("mail") != -1) { %>
+
+                                                                              <%= i18n.order %>
+                                                                              <a href="<%= (order.status_link) ? order.status_link : `${('https://' + store.domain || store.homepage)}/app/#/order/${order.number}/${order._id}` %>">#<%= order.number %></a>
+
+                                                                              <%= i18n.will_mail %>
+                                                                              <strong>
+                                                                                <%= shipping.delivery_time && shipping.delivery_time.days %>
+                                                                                <% if (shipping.delivery_time && shipping.delivery_time.working_days) { %>
+                                                                                <%= i18n.working_days %>
+                                                                                <% } else { %>
+                                                                                <%= i18n.days %>
+                                                                                <% } %>
+                                                                              </strong>
+
 
                                                               <% } else { %>
 
@@ -539,21 +572,23 @@
                                                       </div>
                                                       <% } %>
                                                       <br>
-                                                      <% if (order.shipping_method_label !== 'Retirar na loja') { %>
-                                                      <div style="text-align: center;">
-                                                        <font color="#333333"><%= shipping.to && shipping.to.street %>, nº
-                                                          <%= shipping.to.number %></font>
-                                                      </div>
-                                                      <div style="text-align: center;">
-                                                        <font color="#333333"><%= shipping.to && shipping.to.city %>,
-                                                          <%= shipping.to && shipping.to.province_code %>,
-                                                          <%= shipping.to && shipping.to.zip %></font>
-                                                      </div>
-                                                      <div style="text-align: center;">
-                                                        <font color="#333333"><%= i18n.shipped_by %>
-                                                          <%= shipping.app && shipping.app.carrier %>
-                                                        </font>
-                                                      </div>
+                                                      <% if (order.shipping_method_label.indexOf("etirar") == -1) { %>
+                                                        <% if (order.shipping_method_label.indexOf("mail") == -1) { %>
+                                                          <div style="text-align: center;">
+                                                            <font color="#333333"><%= shipping.to && shipping.to.street %>, nº
+                                                              <%= shipping.to.number %></font>
+                                                          </div>
+                                                          <div style="text-align: center;">
+                                                            <font color="#333333"><%= shipping.to && shipping.to.city %>,
+                                                              <%= shipping.to && shipping.to.province_code %>,
+                                                              <%= shipping.to && shipping.to.zip %></font>
+                                                          </div>
+                                                          <div style="text-align: center;">
+                                                            <font color="#333333"><%= i18n.shipped_by %>
+                                                              <%= shipping.app && shipping.app.carrier %>
+                                                            </font>
+                                                          </div>
+                                                        <% } %>
                                                       <% } %>
                                                     </td>
                                               </tr>

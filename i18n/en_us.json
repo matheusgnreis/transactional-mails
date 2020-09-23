@@ -114,5 +114,8 @@
   "available_pickup": "will be available for pickup at our store in",
   "pickedup": "Picked up at our store",
   "pickup": "is available for pickup at our store.",
-  "and": "and"
+  "and": "and",
+  "will_mail": "will be sent by email",
+  "sent_mail": "sent by e-mail",
+  "soon": "soon"
 }

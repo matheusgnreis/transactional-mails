@@ -98,11 +98,26 @@ if (order.status_link) {
                                                 </div>
 
                                                 <br>
-                                                  <% if (order.shipping_method_label == 'Retirar na loja') { %>
+                                                  <% if (order.shipping_method_label.indexOf("etirar") != -1) { %>
                                                     <div style="text-align: center;">
                                                       <font color="#333333">
                                                         <%= i18n.pickedup %></font>
                                                     </div>
+
+                                                    <% } else if (order.shipping_method_label.indexOf("mail") != -1) { %>
+
+                                                        <div style="text-align: center;">
+                                                          <font color="#333333">
+                                                            <%= i18n.order %>
+                                                            <a href="<%= orderLink %>">
+                                                              <%= order.number %>
+                                                            </a>
+
+                                                            <%= i18n.sent_mail %>
+                                                          </font>
+                                                        </div>
+
+
                                                   <% } else { %>
                                                 <div style="text-align: center;">
                                                   <font color="#333333"><%= shipping.to && shipping.to.street %>, nº
@@ -119,10 +134,10 @@ if (order.status_link) {
                                                   </font>
                                                 </div>
 
-                                              </td>
+
 
                                               <% } }) %>
-
+                                              </td>
                                             </tr>
                                           </tbody>
                                         </table>

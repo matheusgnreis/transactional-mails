@@ -116,5 +116,8 @@
   "available_pickup": "estará disponível para a retirada em nossa loja em",
   "pickedup": "Retirado em nossa loja",
   "pickup": "está disponível para a retirada em nossa loja.",
-  "and": "e"
+  "and": "e",
+  "will_mail": "será enviado por e-mail em",
+  "sent_mail": "foi enviado por e-mail",
+  "soon": "breve"
 }
