@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/ecomplus/transactional-mails/compare/v1.7.0...v1.8.0) (2020-09-23)
+
+
+### Features
+
+* **views:** adding conditionals to support e-mail shipping ([98f38bd](https://github.com/ecomplus/transactional-mails/commit/98f38bd))
+
+
+
 ## [1.7.0](https://github.com/ecomplus/transactional-mails/compare/v1.6.6...v1.7.0) (2020-09-21)
 
 
