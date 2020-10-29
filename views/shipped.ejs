@@ -120,18 +120,17 @@
                                                     href="<%= tracking_code.link %>"> <%= i18n.link %></a>.</font>
                                               </div>
 
-                                              <% } else { if (tracking_code.code) { %>
+                                              <% } if (tracking_code.code) { %>
 
                                               <div style="text-align: center;">
                                                 <font color="#333333"> <%= i18n.traking_code %>
-                                                  <strong><%= tracking_code.code %></strong><% if (shipping.app.tracking_url) { %>
-                                                  neste <a target="_blank" href="<%= shipping.app.tracking_url %>">
+                                                  <strong><%= tracking_code.code %></strong>.<br><% if (shipping.app.tracking_url) { %>
+                                                  <%= i18n.traking_link %> <a target="_blank" href="<%= shipping.app.tracking_url %>">
                                                     <%= i18n.link %></a><% } %>.</font>
                                               </div>
 
                                               <% } %>
 
-                                              <% } %>
 
                                               <% }) %>
                                               <br>
@@ -147,7 +146,7 @@
 
                                               <br>
 
-                                             
+
                                             <div style="text-align: center;">
                                               <font color="#333333"><%= shipping.to && shipping.to.street %>, nº
                                                 <%= shipping.to.number %></font>
