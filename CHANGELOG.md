@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.9.1](https://github.com/ecomplus/transactional-mails/compare/v1.9.0...v1.9.1) (2020-11-23)
+
+
+### Bug Fixes
+
+* **mail:** fixing production and refunded mails ([58ca0c5](https://github.com/ecomplus/transactional-mails/commit/58ca0c5))
+
+
+
 ## [1.9.0](https://github.com/ecomplus/transactional-mails/compare/v1.8.0...v1.9.0) (2020-10-29)
 
 
