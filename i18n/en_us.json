@@ -106,7 +106,7 @@
   "banking_billet_code": "If you haven't made the payment yet, do it with the code bellow:",
   "banking_billet_print": "Print billet",
   "traking_link": "Track your package through this",
-  "traking_code": "Track your package using the code",
+  "traking_code": "Your tracking code is: ",
   "link": "link",
   "stock_title": "A product you’ve wished is on stock",
   "promo_title": "A product you’ve wished is for sale",

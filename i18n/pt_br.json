@@ -50,13 +50,13 @@
   "in_dispute_title": "seu pedido está em disputa",
   "in_dispute_text": "Recebemos seu pedido de disputa que já está em análise.",
   "refunded_title": "seu pagamento foi devolvido",
-  "refunded_text": "Seu pedido de disputa foi aceito e o pagamento já foi extornado.",
+  "refunded_text": "Seu pedido de extorno foi aceito e o pagamento já foi devolvido.",
   "partially_refunded_title": "seu pagamento foi parcialmente devolvido",
   "partially_refunded_text": "Seu pedido de disputa foi aceito e o pagamento já foi parcialmente extornado.",
   "authorized_title": "seu pagamento foi autorizado!",
   "authorized_text": "Assim que o pagamento for aprovado começaremos a preparar seu pacote.",
   "in_production_title": "seu pedido já está em produção!",
-  "in_production_text": "Estamos produzindo seu(s) produto(s).",
+  "in_production_text": "está sendo produzido, e será enviado assim que estiver pronto.",
   "in_separation_title": "já estamos preparando seu pedido!",
   "in_separation_text": "Estamos tirando seu pedido de estoque e preparando o pacote para te enviar.",
   "invoice_issued_title": "sua nota fiscal foi emitida",
@@ -108,7 +108,7 @@
   "banking_billet_code": "Caso ainda não tenha realizado o pagamento, você pode pagar através do código abaixo:",
   "banking_billet_print": "Imprimir boleto",
   "traking_link": "Você pode rastrear sua entrega através deste",
-  "traking_code": "Você pode rastrear sua entrega através do código",
+  "traking_code": "Seu código de rastreamento é: ",
   "link": "link",
   "stock_title": "O produto que deseja está em estoque",
   "promo_title": "O produto que deseja está em promoção",
@@ -119,5 +119,6 @@
   "and": "e",
   "will_mail": "será enviado por e-mail em",
   "sent_mail": "foi enviado por e-mail",
-  "soon": "breve"
+  "soon": "breve",
+  "in_production": "breve"
 }
