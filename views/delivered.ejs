@@ -83,64 +83,64 @@ if (order.status_link) {
                                       </table>
 
                                       <% if (order.shipping_lines) { %>
-                                        <table class="module" role="module" data-type="text" border="0" cellpadding="0"
-                                          cellspacing="0" width="100%" style="table-layout: fixed;">
-                                          <tbody>
-                                            <tr>
+                                      <table class="module" role="module" data-type="text" border="0" cellpadding="0"
+                                        cellspacing="0" width="100%" style="table-layout: fixed;">
+                                        <tbody>
+                                          <tr>
 
-                                              <% order.shipping_lines.forEach(shipping => { %>
+                                            <% order.shipping_lines.forEach(shipping => { %>
 
-                                              <td style="padding:10px 50px 10px 50px;line-height:22px;text-align:inherit;"
-                                                height="100%" valign="top" bgcolor="">
+                                            <td style="padding:10px 50px 10px 50px;line-height:22px;text-align:inherit;"
+                                              height="100%" valign="top" bgcolor="">
 
-                                                <div style="text-align: center;">
-                                                  <font color="#333333"> <%= i18n.delivered_text %> </font>
-                                                </div>
+                                              <div style="text-align: center;">
+                                                <font color="#333333"> <%= i18n.delivered_text %> </font>
+                                              </div>
 
-                                                <br>
-                                                  <% if (order.shipping_method_label.indexOf("etirar") != -1) { %>
-                                                    <div style="text-align: center;">
-                                                      <font color="#333333">
-                                                        <%= i18n.pickedup %></font>
-                                                    </div>
+                                              <br>
+                                              <% if (order.shipping_method_label && order.shipping_method_label.includes("Retirar")) { %>
+                                              <div style="text-align: center;">
+                                                <font color="#333333">
+                                                  <%= i18n.pickedup %></font>
+                                              </div>
 
-                                                    <% } else if (order.shipping_method_label.indexOf("mail") != -1) { %>
+                                              <% } else if (order.shipping_method_label && order.shipping_method_label.includes("mail")) { %>
 
-                                                        <div style="text-align: center;">
-                                                          <font color="#333333">
-                                                            <%= i18n.order %>
-                                                            <a href="<%= orderLink %>">
-                                                              <%= order.number %>
-                                                            </a>
+                                              <div style="text-align: center;">
+                                                <font color="#333333">
+                                                  <%= i18n.order %>
+                                                  <a href="<%= orderLink %>">
+                                                    <%= order.number %>
+                                                  </a>
 
-                                                            <%= i18n.sent_mail %>
-                                                          </font>
-                                                        </div>
+                                                  <%= i18n.sent_mail %>
+                                                </font>
+                                              </div>
 
 
-                                                  <% } else { %>
-                                                <div style="text-align: center;">
-                                                  <font color="#333333"><%= shipping.to && shipping.to.street %>, nº
-                                                    <%= shipping.to.number %></font>
-                                                </div>
-                                                <div style="text-align: center;">
-                                                  <font color="#333333"><%= shipping.to && shipping.to.city %>,
-                                                    <%= shipping.to && shipping.to.province_code %>,
-                                                    <%= shipping.to && shipping.to.zip %></font>
-                                                </div>
-                                                <div style="text-align: center;">
-                                                  <font color="#333333"><%= i18n.shipped_by %>
-                                                    <%= shipping.app && shipping.app.carrier %>
-                                                  </font>
-                                                </div>
+                                              <% } else { %>
+                                              <div style="text-align: center;">
+                                                <font color="#333333"><%= shipping.to && shipping.to.street %>, nº
+                                                  <%= shipping.to.number %></font>
+                                              </div>
+                                              <div style="text-align: center;">
+                                                <font color="#333333"><%= shipping.to && shipping.to.city %>,
+                                                  <%= shipping.to && shipping.to.province_code %>,
+                                                  <%= shipping.to && shipping.to.zip %></font>
+                                              </div>
+                                              <div style="text-align: center;">
+                                                <font color="#333333"><%= i18n.shipped_by %>
+                                                  <%= shipping.app && shipping.app.carrier %>
+                                                </font>
+                                              </div>
 
 
 
                                               <% } }) %>
-                                              </td>
-                                            </tr>
-                                          </tbody>
-                                        </table>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
                                       <% } %>
 
 
@@ -168,7 +168,7 @@ if (order.status_link) {
                                                       height="100%" valign="top" bgcolor="">
                                                       <div style="text-align: center;"><span style="color:#333333;">
                                                           <p><%= i18n.or %> <a
-                                                            href="<%= store.homepage || `https://${store.domain}` %>"><%= i18n.visit_store %></a>
+                                                              href="<%= store.homepage || `https://${store.domain}` %>"><%= i18n.visit_store %></a>
                                                           </p>
 
                                                         </span></div>

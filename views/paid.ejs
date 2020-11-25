@@ -75,7 +75,7 @@
 
                                     <% order.shipping_lines.forEach(shipping => {%>
 
-                                      <% if (order.shipping_method_label.indexOf("etirar") != -1) { %>
+                                      <% if (order.shipping_method_label && order.shipping_method_label.includes("Retirar")) { %>
                                         <td style="padding:10px 50px 10px 50px;line-height:22px;text-align:inherit;"
                                           height="100%" valign="top" bgcolor="">
                                           <div style="text-align: center;">
@@ -96,7 +96,7 @@
                                           </div>
                                         </td>
 
-                                        <% } else if (order.shipping_method_label.indexOf("mail") != -1) { %>
+                                        <% } else if (order.shipping_method_label && order.shipping_method_label.includes("mail")) { %>
 
                                           <td style="padding:10px 50px 10px 50px;line-height:22px;text-align:inherit;"
                                             height="100%" valign="top" bgcolor="">
