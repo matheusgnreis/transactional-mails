@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.10.1](https://github.com/ecomplus/transactional-mails/compare/v1.10.0...v1.10.1) (2021-01-28)
+
+
+### Bug Fixes
+
+* **i18n:** fixing spelling ([f1a0cad](https://github.com/ecomplus/transactional-mails/commit/f1a0cad))
+
+
+
 ## [1.10.0](https://github.com/ecomplus/transactional-mails/compare/v1.6.6...v1.10.0) (2020-11-25)
 
 
