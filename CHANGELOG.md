@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.10.0](https://github.com/ecomplus/transactional-mails/compare/v1.6.6...v1.10.0) (2020-11-25)
+
+
+### Bug Fixes
+
+* **i18n:** removing needless comma ([fee4097](https://github.com/ecomplus/transactional-mails/commit/fee4097))
+* **mail:** fixing production and refunded mails ([58ca0c5](https://github.com/ecomplus/transactional-mails/commit/58ca0c5))
+* avoiding errors on validate nested objects ([398937b](https://github.com/ecomplus/transactional-mails/commit/398937b))
+
+
+### Features
+
+* **mail:** always sending tracking code ([00158d8](https://github.com/ecomplus/transactional-mails/commit/00158d8))
+* **mails:** specifing texts when picking order up ([e03617d](https://github.com/ecomplus/transactional-mails/commit/e03617d))
+* **views:** adding conditionals to support e-mail shipping ([98f38bd](https://github.com/ecomplus/transactional-mails/commit/98f38bd))
+
+
+
 ### [1.9.2](https://github.com/ecomplus/transactional-mails/compare/v1.9.1...v1.9.2) (2020-11-23)
 
 
