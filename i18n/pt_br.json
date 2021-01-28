@@ -50,7 +50,7 @@
   "in_dispute_title": "seu pedido está em disputa",
   "in_dispute_text": "Recebemos seu pedido de disputa que já está em análise.",
   "refunded_title": "seu pagamento foi devolvido",
-  "refunded_text": "Seu pedido de extorno foi aceito e o pagamento já foi devolvido.",
+  "refunded_text": "Seu pedido de estorno foi aceito e o pagamento já foi devolvido.",
   "partially_refunded_title": "seu pagamento foi parcialmente devolvido",
   "partially_refunded_text": "Seu pedido de disputa foi aceito e o pagamento já foi parcialmente extornado.",
   "authorized_title": "seu pagamento foi autorizado!",
